@@ -468,14 +468,14 @@
 									<span>
 										プラズマは物質の4番目の状態であり、Tier 4の機械や大空間構造物によって、あなたの会社の極端な電源として使用されます。最初は一度に100,000個のプラズマを保持することができますが、プラズマストレージユニットのロックを解除して購入して、この数を増やすことができます。
 										<br>
-										残り時間 <span id="plasmaLimitType">いっぱい</span> storage: <b><span id="plasmaLimitTime">N/A</span></b>
+										 <span id="plasmaLimitType">いっぱいまでの</span>残り時間 保管: <b><span id="plasmaLimitTime">N/A</span></b>
 										<br>
 										1 プラズマは注入によって生成されます <span id="manualPlasmaHydrogenCost">10</span> 水素と <span id="manualPlasmaEnergyCost">1000</span> エネルギー.
 									</span>
 									<br>
 									<br>
 									<hide class="gainButton">
-										<div onclick="gainResource('plasma')" class="btn btn-default">Gain <span id="plasmaGain">1</span></div>
+										<div onclick="gainResource('plasma')" class="btn btn-default">獲得する <span id="plasmaGain">1</span></div>
 										<br>
 										<br>
 									</hide>
@@ -489,7 +489,7 @@
 									<span>
 										PSUは、構築されたPSUごとにプラズマストレージを50,000増加させます。
 										<br>
-										Costs <span id="PSUSilverCost">770,000</span> Silver, <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
+										コスト <span id="PSUSilverCost">770,000</span> 銀, <span id="PSUGoldCost">770,000</span> ゴールド, <span id="PSUUraniumCost">550,000</span> ウラン.
 									</span>
 									<br>
 									<br>
@@ -502,76 +502,76 @@
 										T2 PSUs: <span id="PSUT2">0</span>
 									</h3>
 									<span>
-										Tier 2 PSUs increase your plasma storage by 500,000 per PSU built.
+										T2 PSUは、構築されたPSUごとにプラズマストレージを500,000増加させます。
 										<br>
-										Costs <span id="PSUT2SilverCost">9.300M</span> Silver, <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
+										コスト <span id="PSUT2SilverCost">9.300M</span> 銀, <span id="PSUT2GoldCost">9.300M</span> ゴールド, <span id="PSUT2UraniumCost">6.800M</span> ウラン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSUT2()" class="btn btn-default">Get PSU T2</button>
+									<button onclick="getPSUT2()" class="btn btn-default">PSU T2を入手する</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Super-Heater: <span id="heater">0</span>
+										スーパーヒーター: <span id="heater">0</span>
 									</h3>
 									<span>
-										The Super-Heater throws electricity at Hydrogen to turn it into a plasmatic substance.
+										スーパーヒーターは水素に電気を放出してプラズマ物質に変えます。
 										<br>
-										Uses 1,000 Energy and 10 Hydrogen per second.
+										毎秒1,000エネルギーと10水素を使用します。
 										<br>
-										Produces 1 Plasma per second.
+										毎秒1プラズマを生成します。
 										<br>
-										Costs <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> Gems, <span id="heaterSiliconCost">59,000</span> Silicon.
+										コスト <span id="heaterLunariteCost">75,000</span> ルナライト, <span id="heaterGemCost">68,000</span> 宝石, <span id="heaterSiliconCost">59,000</span> シリコン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">Get Super-Heater</button>
-									<button onclick="toggleHeater()" class="btn btn-default">Turn Super-Heater <span id="heaterToggled">Off</span></button>
-									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Destroy Super-Heater</button>
+									<button onclick="getHeater()" class="btn btn-default">スーパーヒーターを入手する</button>
+									<button onclick="toggleHeater()" class="btn btn-default">スーパーヒーターをオンにする <span id="heaterToggled">Off</span></button>
+									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">スーパーヒーターを破壊する</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Plasmatic Pit: <span id="plasmatic">0</span>
+										プラズマピット: <span id="plasmatic">0</span>
 									</h3>
 									<span>
-										This contraption converts Helium into Plasma through firing intensive energy bolts at the gas cloud.
+										この装置は、ガス雲に集中的なエネルギーボルトを発射することで、ヘリウムをプラズマに変換します。
 										<br>
-										Uses 8,500 Energy and 80 Helium per second.
+										毎秒8,500エネルギーと80ヘリウムを使用します。
 										<br>
-										Produces 10 Plasma per second.
+										毎秒10プラズマを生成します。
 										<br>
-										Costs <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> Meteorite.
+										Costs <span id="plasmaticLunariteCost">810,000</span> ルナライト, <span id="plasmaticSiliconCost">720,000</span> シリコン, <span id="plasmaticMeteoriteCost">970</span> 隕石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlasmatic()" class="btn btn-default">Get Plasmatic Pit</button>
-									<button onclick="togglePlasmatic()" class="btn btn-default">Turn Plasmatic Pit <span id="plasmaticToggled">Off</span></button>
-									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">Destroy Plasmatic Pit</button>
+									<button onclick="getPlasmatic()" class="btn btn-default">プラズマピットを入手する</button>
+									<button onclick="togglePlasmatic()" class="btn btn-default">プラズマピットを回す <span id="plasmaticToggled">Off</span></button>
+									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">プラズマピットを破壊する</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Electron Bath: <span id="bath">0</span>
+										エレクトロンバス: <span id="bath">0</span>
 									</h3>
 									<span>
-										Bathing in Electrons. What could go wrong?
+										電子で入浴する。何がうまくいかないでしょうか？
 										<br>
-										Uses 15,000 Energy and 100 Helium and 100 Hydrogen per second.
+										毎秒15,000エネルギーと100ヘリウムと100水素を使用します。
 										<br>
-										Produces 140 Plasma per second.
+										毎秒140プラズマを生成します。
 										<br>
-										Costs <span id="bathLavaCost">6.20M</span> Lava, <span id="bathGoldCost">5.90M</span> Gold, <span id="bathMeteoriteCost">12,100</span> Meteorite.
+										コスト <span id="bathLavaCost">6.20M</span> 溶岩, <span id="bathGoldCost">5.90M</span> ゴールド, <span id="bathMeteoriteCost">12,100</span> 隕石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBath()" class="btn btn-default">Get Electron Bath</button>
-									<button onclick="toggleBath()" class="btn btn-default">Turn Electron Bath <span id="bathToggled">Off</span></button>
-									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">Destroy Electron Bath</button>
+									<button onclick="getBath()" class="btn btn-default">エレクトロンバスを手に入れる</button>
+									<button onclick="toggleBath()" class="btn btn-default">電子浴をオンにする <span id="bathToggled">Off</span></button>
+									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">エレクトロンバスを破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -583,199 +583,199 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Energy
+										エネルギー
 									</h2>
 									<span>
-										Energy is created by power sources such as steam engines, solar power and advances even to fusion power and nuclear energy. The maximum you can hold to start with is 100,000 Energy, but batteries are unlockable which can increase this.
+										エネルギーは、蒸気機関、太陽光発電、さらには核融合発電や原子力エネルギーへの進歩などの動力源によって生成されます。最初に保持できる最大値は100,000エネルギーですが、バッテリーのロックを解除できるため、これを増やすことができます。
 										<br>
-										Time remaining until <span id="energyLimitType">full</span> storage: <b><span id="energyLimitTime">N/A</span></b>
+										 <span id="energyLimitType">いっぱい</span>までの残り時間 保管: <b><span id="energyLimitTime">N/A</span></b>
 										<br>
 									</span>
 									<br>
-									<button onclick="toggleEnergy()" class="btn btn-default">Toggle All Energy Production + Consumption</button>
+									<button onclick="toggleEnergy()" class="btn btn-default">すべてのエネルギー生産+消費を切り替える</button>
 								</td>
 							</tr>
 							<tr id="batteries" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Batteries: <span id="battery">0</span>
+										バッテリー: <span id="battery">0</span>
 									</h3>
 									<span>
-										Batteries increase your energy storage by 50,000 per battery built.
+										バッテリーは、構築されたバッテリーごとに50,000のエネルギー貯蔵量を増やします。
 										<br>
-										Costs <span id="batteryMetalCost">50,000</span> Metal, <span id="batteryGemCost">50,000</span> Gems, <span id="batteryLunariteCost">30,000</span> Lunarite.
+										コスト <span id="batteryMetalCost">50,000</span> 金属, <span id="batteryGemCost">50,000</span> 宝石, <span id="batteryLunariteCost">30,000</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBattery()" class="btn btn-default">Get Battery</button>
+									<button onclick="getBattery()" class="btn btn-default">バッテリーを入手する</button>
 								</td>
 							</tr>
 							<tr id="batteriesT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T2 Batteries: <span id="batteryT2">0</span>
+										T2 バッテリー: <span id="batteryT2">0</span>
 									</h3>
 									<span>
-										Tier 2 Batteries increase your energy storage by 500,000 per battery built.
+										T2バッテリーは、バッテリー1台あたり50万のエネルギー貯蔵量を増やします。
 										<br>
-										Costs <span id="batteryT2MetalCost">550,000</span> Metal, <span id="batteryT2GemCost">550,000</span> Gems, <span id="batteryT2LunariteCost">330,000</span> Lunarite.
+										コスト <span id="batteryT2MetalCost">550,000</span> 金属, <span id="batteryT2GemCost">550,000</span> 宝石, <span id="batteryT2LunariteCost">330,000</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT2()" class="btn btn-default">Get Battery T2</button>
+									<button onclick="getBatteryT2()" class="btn btn-default">T2バッテリーを入手する</button>
 								</td>
 							</tr>
 							<tr id="batteriesT3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T3 Batteries: <span id="batteryT3">0</span>
+										T3 バッテリー: <span id="batteryT3">0</span>
 									</h3>
 									<span>
-										Tier 3 Batteries increase your energy storage by 5,000,000 per battery built.
+										T3バッテリーは、構築されたバッテリーごとにエネルギー貯蔵量を5,000,000増加させます。
 										<br>
-										Costs <span id="batteryT3MetalCost">5,500,000</span> Metal, <span id="batteryT3GemCost">5,500,000</span> Gems, <span id="batteryT3LunariteCost">3,300,000</span> Lunarite.
+										コスト <span id="batteryT3MetalCost">5,500,000</span> 金属, <span id="batteryT3GemCost">5,500,000</span> 宝石, <span id="batteryT3LunariteCost">3,300,000</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT3()" class="btn btn-default">Get Battery T3</button>
+									<button onclick="getBatteryT3()" class="btn btn-default">バッテリーT3を入手</button>
 								</td>
 							</tr>
 							<tr id="batteriesT4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T4 Batteries: <span id="batteryT4">0</span>
+										T4 バッテリー: <span id="batteryT4">0</span>
 									</h3>
 									<span>
-										Tier 4 Batteries increase your energy storage by 50,000,000 per battery built.
+										T4バッテリーは、構築されたバッテリーごとに50,000,000のエネルギー貯蔵量を増やします。
 										<br>
-										Costs <span id="batteryT4MetalCost">55,000,000</span> Metal, <span id="batteryT4GemCost">55,000,000</span> Gems, <span id="batteryT4LunariteCost">33,000,000</span> Lunarite.
+										コスト <span id="batteryT4MetalCost">55,000,000</span> 金属, <span id="batteryT4GemCost">55,000,000</span> 宝石, <span id="batteryT4LunariteCost">33,000,000</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT4()" class="btn btn-default">Get Battery T4</button>
+									<button onclick="getBatteryT4()" class="btn btn-default">バッテリーT4を入手</button>
 								</td>
 							</tr>
 							<tr id="batteriesT5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T5 Batteries: <span id="batteryT5">0</span>
+										T5 バッテリー: <span id="batteryT5">0</span>
 									</h3>
 									<span>
-										Tier 5 Batteries increase your energy storage by 500,000,000 per battery built.
+										T5バッテリーは、構築されたバッテリーごとに500,000,000エネルギー貯蔵量を増やします。
 										<br>
-										Costs <span id="batteryT5MetalCost">490,000,000</span> Metal, <span id="batteryT5GemCost">490,000,000</span> Gems, <span id="batteryT5LunariteCost">290,000,000</span> Lunarite.
+										コスト <span id="batteryT5MetalCost">490,000,000</span> 金属, <span id="batteryT5GemCost">490,000,000</span> 宝石, <span id="batteryT5LunariteCost">290,000,000</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT5()" class="btn btn-default">Get Battery T5</button>
+									<button onclick="getBatteryT5()" class="btn btn-default">バッテリーT5を入手する</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Charcoal Engine: <span id="charcoalEngine">0</span>
+										チャコールエンジン: <span id="charcoalEngine">0</span>
 									</h3>
 									<span>
-										Burns Charcoal to produce a steady source of Energy.
+										木炭を燃やして安定したエネルギー源を生成します。
 										<br>
-										Each engine produces <span id="charcoalEngineOutput">2</span> Energy and uses 1 Charcoal per second.
+										各エンジンが生産する量は <span id="charcoalEngineOutput">2</span> エネルギーと毎秒1木炭を使用します。
 										<br>
-										Costs <span id="charcoalEngineMetalCost">50</span> Metal, <span id="charcoalEngineGemCost">25</span> Gems.
+										コスト <span id="charcoalEngineMetalCost">50</span> 金属, <span id="charcoalEngineGemCost">25</span> 宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCharcoalEngine()" class="btn btn-default">Get Charcoal Engine</button>
-									<button onclick="destroyMachine('charcoalEngine')" class="btn btn-default destroy hidden">Destroy Charcoal Engine</button>
+									<button onclick="getCharcoalEngine()" class="btn btn-default">チャコールエンジンを入手する</button>
+									<button onclick="destroyMachine('charcoalEngine')" class="btn btn-default destroy hidden">チャコールエンジンを破壊する</button>
 								</td>
 							</tr>
 							<tr id="solarPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Solar Panels: <span id="solarPanel">0</span>
+										ソーラーパネル: <span id="solarPanel">0</span>
 									</h3>
 									<span>
-										Gains Energy slowly from the sun without using any resources.
+										資源を使わずに太陽からゆっくりとエネルギーを得る。
 										<br>
-										Each Solar Panel produces <span id="solarPanelOutput">1.5</span> Energy per second.
+										各ソーラーパネルが生産する量は <span id="solarPanelOutput">1.5</span> のエネルギー。
 										<br>
-										Costs <span id="solarPanelMetalCost">30</span> Metal, <span id="solarPanelGemCost">35</span> Gems.
+										コスト <span id="solarPanelMetalCost">30</span> 金属, <span id="solarPanelGemCost">35</span> 宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getSolarPanel()" class="btn btn-default">Get Solar Panel</button>
-									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">Destroy Solar Panel</button>
+									<button onclick="getSolarPanel()" class="btn btn-default">ソーラーパネルを入手する</button>
+									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">ソーラーパネルを破壊する</button>
 								</td>
 							</tr>
 							<tr id="methanePower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Methane Power Stations: <span id="methaneStation">0</span>
+										メタン発電所: <span id="methaneStation">0</span>
 									</h3>
 									<span>
-										Burn powerful methane from Venus to satisfy all your power needs.
+										金星から強力なメタンを燃やして、すべての電力ニーズを満たします。
 										<br>
-										Each Power Station produces 23 Energy and uses 6 methane per second.
+										各発電所は23エネルギーを生成し、毎秒6メタンを使用します。
 										<br>
-										Costs <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titanium.
+										コスト <span id="methaneStationLunariteCost">110</span> ルナライト, <span id="methaneStationTitaniumCost">90</span> チタン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMethaneStation()" class="btn btn-default">Get Methane Power Station</button>
-									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">Destroy Methane Station</button>
+									<button onclick="getMethaneStation()" class="btn btn-default">メタン発電所を入手する</button>
+									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">メタンステーションを破壊する</button>
 								</td>
 							</tr>
 							<tr id="nuclearPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Nuclear Power Stations: <span id="nuclearStation">0</span>
+										原子力発電所: <span id="nuclearStation">0</span>
 									</h3>
 									<span>
-										Uses fission to create large amounts of power.
+										核分裂を使用して大量の電力を生成します。
 										<br>
-										Each Power Station produces 153 Energy and uses 7 uranium per second.
+										各発電所は153エネルギーを生産し、毎秒7ウランを使用します。
 										<br>
-										Costs <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
+										コスト <span id="nuclearStationLunariteCost">20,000</span> ルナライト, <span id="nuclearStationTitaniumCost">10,000</span> チタン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getNuclearStation()" class="btn btn-default">Get Nuclear Power Station</button>
-									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">Destroy Nuclear Station</button>
+									<button onclick="getNuclearStation()" class="btn btn-default">原子力発電所を入手する</button>
+									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">原子力発電所を破壊する</button>
 								</td>
 							</tr>
 							<tr id="magmaticPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Magmatic Dynamo: <span id="magmatic">0</span>
+										マグマティックダイナモ: <span id="magmatic">0</span>
 									</h3>
 									<span>
-										The Magmatic Dynamo is a method of producing power by using lava as a fuel. Because of the extreme temperature of lava, a lot of Energy can be produced at once.
+										マグマティックダイナモは、溶岩を燃料として使用して電力を生成する方法です。溶岩の極端な温度のため、一度に多くのエネルギーを生成することができます。
 										<br>
-										Each Power Station produces 191 Energy and uses 11 lava per second.
+										各発電所は191エネルギーを生成し、毎秒11溶岩を使用します。
 										<br>
-										Costs <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> Gems, <span id="magmaticSilverCost">20,000</span> Silver.
+										コスト <span id="magmaticLunariteCost">25,000</span> ルナライト, <span id="magmaticGemCost">30,000</span> 宝石, <span id="magmaticSilverCost">20,000</span> 銀.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagmatic()" class="btn btn-default">Get Magmatic Dynamo</button>
-									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">Destroy Magmatic Dynamo</button>
+									<button onclick="getMagmatic()" class="btn btn-default">マグマティック・ダイナモを入手</button>
+									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">マグマティックダイナモを破壊する</button>
 								</td>
 							</tr>
 							<tr id="fusionPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Fusion Reactor: <span id="fusionReactor">0</span>
+										フュージョンリアクター: <span id="fusionReactor">0</span>
 									</h3>
 									<span>
-										In a fusion reaction, Energy is released when two light atomic nuclei are fused together to form one heavier atom. This is the same reaction that occurs in stars and produces a lot of power.
+										核融合反応では、2つの軽い原子核が融合して1つのより重い原子を形成すると、エネルギーが放出されます。これは、星で発生し、多くの力を生み出すのと同じ反応です。
 										<br>
-										Each Power Station produces 273 Energy and uses 10 Hydrogen and 10 Helium per second.
+										各発電所は273エネルギーを生成し、毎秒10水素と10ヘリウムを使用します。
 										<br>
-										Costs <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titanium, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
+										コスト <span id="fusionReactorLunariteCost">30,000</span> ルナライト, <span id="fusionReactorTitaniumCost">20,000</span> チタン, <span id="fusionReactorSiliconCost">15,000</span> シリコン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFusionReactor()" class="btn btn-default">Get Fusion Reactor</button>
-									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">Destroy Fusion Reactor</button>
+									<button onclick="getFusionReactor()" class="btn btn-default">フュージョンリアクターを入手する</button>
+									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">核融合炉を破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -787,15 +787,15 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Uranium
+										ウラン
 									</h2>
 									<span>
-										Uranium is used for nuclear power generation because when it is split, it releases huge amounts of Energy. For this reason, it is prominent in many advanced machines and for propulsion technology as it is useful for inter-star-system travel. Unfortunately, it is hard to get and it requires a lot of resources to radiation-proof equipment.
+										ウランは、分裂すると膨大な量のエネルギーを放出するため、原子力発電に使用されます。そして、星間システム間の移動に役立つため、多くの高度な機械や推進技術で顕著です。しかし、残念ながら、入手が難しく、放射線防止機器には多くのリソースが必要です。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('uranium')" class="btn btn-default">Gain <span id="uraniumGain">1</span></div>
+									<div onclick="gainResource('uranium')" class="btn btn-default">獲得する <span id="uraniumGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -804,116 +804,116 @@
 							<tr id="uraniumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Uranium storage size to <span id="uraniumNextStorage">100</span>.
+										ウランのストレージサイズをアップグレードする <span id="uraniumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="uraniumLimitType">full</span> storage: <b><span id="uraniumLimitTime">N/A</span></b>
+										 <span id="uraniumLimitType">いっぱい</span>までの残り時間 保管: <b><span id="uraniumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> Lunarite.
+										コスト <span id="uraniumStorageCost">50</span> ウラン, <span id="uraniumStorageLunariteCost">20</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeUraniumStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeUraniumStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Grinder: <span id="grinder">0</span>
+										グラインダー: <span id="grinder">0</span>
 									</h3>
 									<span>
-										Pulverizes Uranium for easy transportation out of deep mineshafts.
+										深い鉱山シャフトから簡単に輸送できるように、ウランを粉砕します。
 										<br>
-										Produces 1 Uranium per second.
+										毎秒1ウランを生成する。
 										<br>
-										Costs <span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
+										コスト <span id="grinderTitaniumCost">2000</span> チタン, <span id="grinderLunariteCost">4000</span> ルナライト, <span id="grinderGoldCost">2000</span> ゴールド.
 									</span>
 									<br>
 									<br>
-									<button onclick="getGrinder()" class="btn btn-default">Get Grinder</button>
-									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">Destroy Grinder</button>
+									<button onclick="getGrinder()" class="btn btn-default">グラインダーを入手</button>
+									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">粉砕機を破壊する</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Cubic Teleposer: <span id="cubic">0</span>
+										キュービックテレポーザー: <span id="cubic">0</span>
 									</h3>
 									<span>
-										This teleposes blocks of rock from far underground to the surface so that Uranium can be mined more easily.
+										これは、ウランをより簡単に採掘できるように、遠くの地下から地表に岩のブロックをテレポーズします。
 										<br>
-										Produces 9 Uranium per second.
+										毎秒9ウランを生成します。
 										<br>
-										Uses 40 Energy per second.
+										毎秒40エネルギーを使用します。
 										<br>
-										Costs <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
+										コスト <span id="cubicUraniumCost">80</span> ウラン, <span id="cubicLunariteCost">10000</span> ルナライト, <span id="cubicOilCost">10000</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCubic()" class="btn btn-default">Get Cubic Teleposer</button>
-									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">Destroy Cubic Teleposer</button>
+									<button onclick="getCubic()" class="btn btn-default">キュービックテレポーザーを入手</button>
+									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">キューブテレポーザーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Uranium Enricher: <span id="enricher">0</span>
+										ウランエンリッチャー: <span id="enricher">0</span>
 									</h3>
 									<span>
-										The Enricher increases the quality of uranium mined and thus allows more of the uranium in rocks to be used in your company.
+										エンリッシャーは、採掘されたウランの品質を向上させ、したがって、岩石中のより多くのウランを会社で使用できるようにします。
 										<br>
-										Produces 61 Uranium per second.
+										毎秒61個のウランを生成します。
 										<br>
-										Uses 180 Energy per second.
+										毎秒180エネルギーを使用します。
 										<br>
-										Costs <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
+										コスト <span id="enricherLunariteCost">21,700</span> ルナライト, <span id="enricherTitaniumCost">23,000</span> チタン, <span id="enricherSiliconCost">13,500</span> シリコン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getEnricher()" class="btn btn-default">Get Uranium Enricher</button>
-									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">Destroy Uranium Enricher</button>
+									<button onclick="getEnricher()" class="btn btn-default">ウランエンリッチャーを入手</button>
+									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">ウランエンリッシャーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Yellowcake Recycler: <span id="recycler">0</span>
+										イエローケーキリサイクル: <span id="recycler">0</span>
 									</h3>
 									<span>
-										Recycles used-up Uranium to provide the resources with a second use. This greatly increases the amount of Uranium you can use per second.
+										使用済みのウランをリサイクルして、リソースに2回目の使用を提供します。これにより、1秒間に使用できるウランの量が大幅に増加します。
 										<br>
-										Produces 235 Uranium per second.
+										毎秒235個のウランを生成します。
 										<br>
-										Uses 463 Energy per second.
+										毎秒463エネルギーを使用します。
 										<br>
-										Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> Meteorite.
+										コスト <span id="recyclerLunariteCost">93,100</span> ルナライト, <span id="recyclerMethaneCost">47,000</span> メタン, <span id="recyclerMeteoriteCost">830</span> 隕石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getRecycler()" class="btn btn-default">Get Yellowcake Recycler</button>
-									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">Destroy Yellowcake Recycler</button>
+									<button onclick="getRecycler()" class="btn btn-default">イエローケーキリサイクル業者を入手</button>
+									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">イエローケーキリサイクル業者を破壊する</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Planetary Nuclear Plant: <span id="planetNuke">0</span>
+										惑星原子力発電所: <span id="planetNuke">0</span>
 									</h3>
 									<span>
 										この巨大な工場は惑星のように大きく、共通の元素からウランを融合しています。
 										<br>
-										Produces 2412 Uranium per second.
+										毎秒2412個のウランを生成します。
 										<br>
-										Uses 2719 Energy per second.
+										毎秒2719エネルギーを使用します。
 										<br>
-										Costs <span id='planetNukeTitaniumCost'>486000</span> Titanium, <span id='planetNukeSiliconCost'>266000</span> Silicon, <span id='planetNukeIceCost'>364000</span> Ice
+										コスト <span id='planetNukeTitaniumCost'>486000</span> チタン, <span id='planetNukeSiliconCost'>266000</span> シリコン, <span id='planetNukeIceCost'>364000</span> 氷
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlanetNuke()" class="btn btn-default">Get Planetary Nuclear Plant</button>
-									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">Destroy Planetary Nuclear Plant</button>
+									<button onclick="getPlanetNuke()" class="btn btn-default">惑星原子力発電所を入手する</button>
+									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">惑星原子力発電所を破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -925,15 +925,15 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Oil
+										オイル
 									</h2>
 									<span>
-										Oil is pumped up from the ground and is used to build Tier 2 resource gatherers.
+										石油は地面から汲み上げられ、ティア2の資源収集員を構築するために使用されます。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('oil')" class="btn btn-default">Gain <span id="oilGain">1</span></div>
+									<div onclick="gainResource('oil')" class="btn btn-default">獲得する <span id="oilGain">1</span></div>
 									</hide>
 								</td>
 							</tr>
@@ -945,64 +945,64 @@
 									<span>
 										オイル貯蔵サイズをアップグレードする<span id="oilNextStorage">100</span>.
 										<br>
-										残り時間 <span id="oilLimitType">full</span> storage: <b><span id="oilLimitTime">N/A</span></b>
+										<span id="oilLimitType">いっぱい</span>までの残り時間 保管: <b><span id="oilLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="oilStorageCost">50</span> Oil, <span id="oilStorageMetalCost">20</span> Metal.
+										コスト <span id="oilStorageCost">50</span> オイル, <span id="oilStorageMetalCost">20</span> 金属.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeOilStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeOilStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Small Pump: <span id="pump">0</span>
+										小型ポンプ: <span id="pump">0</span>
 									</h3>
 									<span>
-										Build a small pump to extract Oil from the ground
+										地面から石油を抽出するための小さなポンプを構築する
 										<br>
-										Produces 1 Oil per second.
+										毎秒1オイルを生産します。
 										<br>
-										Costs <span id="pumpMetalCost">60</span> Metal, <span id="pumpGemCost">20</span> Gems.
+										コスト <span id="pumpMetalCost">60</span> 金属, <span id="pumpGemCost">20</span> 宝石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPump()" class="btn btn-default">Get Pump</button>
-									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">Destroy Small Pump</button>
+									<button onclick="getPump()" class="btn btn-default">ポンプを入手する</button>
+									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">小型ポンプを破壊する</button>
 								</td>
 							</tr>
 							<tr id="oilTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Pumpjack: <span id="pumpjack">0</span>
+										ポンプジャック: <span id="pumpjack">0</span>
 									</h3>
 									<span>
-										Pumpjacks are much bigger than small pumps and produce Oil on an industrial scale but they require a lot of Energy.
+										ポンプジャックは小さなポンプよりもはるかに大きく、産業規模で石油を生産しますが、多くのエネルギーを必要とします。
 										<br>
-										Each one produces <span id="pumpjackOutput">5</span> Oil for 4 Energy every second.
+										それぞれが生産する量は <span id="pumpjackOutput">5</span> オイル。使う量は毎秒4エネルギー
 										<br>
-										Costs <span id="pumpjackMetalCost">250</span> Metal, <span id="pumpjackGemCost">80</span> Gems, <span id="pumpjackOilCost">50</span> Oil.
+										コスト <span id="pumpjackMetalCost">250</span> 金属, <span id="pumpjackGemCost">80</span> 宝石, <span id="pumpjackOilCost">50</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPumpjack()" class="btn btn-default">Get Pumpjack</button>
-									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">Destroy Pumpjack</button>
+									<button onclick="getPumpjack()" class="btn btn-default">ポンプジャックを入手する</button>
+									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">ポンプジャックを破壊する</button>
 								</td>
 							</tr>
 							<tr id="oilTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Oil Field: <span id="oilField">0</span>
+										油田: <span id="oilField">0</span>
 									</h3>
 									<span>
-										Oil Fields are large open spaces, usually found in deserts where vast oil wells can be found under the ground.
+										油田は広いオープンスペースで、通常は砂漠で見られ、地下には広大な油井があります。
 										<br>
-										Produces 63 Oil per second.
+										毎秒63オイルを生成します。
 										<br>
-										Uses 12 Energy per second.
+										毎秒12エネルギーを使用します。
 										<br>
-										Costs <span id="oilFieldLunariteCost">2,400</span> Lunarite, <span id="oilFieldTitaniumCost">2,700</span> Titanium, <span id="oilFieldSiliconCost">3,900</span> Silicon.
+										コスト <span id="oilFieldLunariteCost">2,400</span> ルナライト, <span id="oilFieldTitaniumCost">2,700</span> チタン, <span id="oilFieldSiliconCost">3,900</span> シリコン.
 									</span>
 									<br>
 									<br>
@@ -6997,10 +6997,10 @@
 							<tr>
 								<td>
 									<h4>
-										Where else can I find the game?
+										他にどこでゲームを見つけることができますか？
 									</h4>
 									<span>
-										You can find the game on any of these sites:
+										これらのサイトのいずれかでゲームを見つけることができます:
 										<br>
 										<a target="_blank" href="http://reddit.com">Reddit: </a><a target="_blank" href="https://www.reddit.com/r/spacecompany">r/spacecompany</a>
 										<br>
@@ -7019,22 +7019,22 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										About
+										アバウト
 									</h2>
 									<span>
-										This game is made by me, Sparticle999, as a project to improve my skills at making games and to see what I could add to the incremental gaming world.
+										このゲームは、ゲーム作成のスキルを向上させ、漸進的なゲームの世界に何を追加できるかを確認するためのプロジェクトとして、Sparticle999によって作成されました。
 										<br>
-										The content in this game is not always accurate. This is because if it were accurate, many of the elements on other planets would be the same as Earth's, such as metal on Mars (iron oxide). Thus, I have had to make up some facts to help my game stay diverse. I apologise for any infuriation caused.
+										このゲームの内容は必ずしも正確ではありません。これは、それが正確であれば、火星の金属（酸化鉄）など、他の惑星の多くの元素が地球のものと同じになるからです。したがって、私は自分のゲームが多様性を保つのを助けるためにいくつかの事実を作らなければなりませんでした。怒らせたことをお詫びします。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td style="border:none;">
 									<h3 class="default btn-link">
-										Tools Used
+										使用されるツール
 									</h3>
 									<span>
-										<a class="pointer btn-link" target="_blank" href="http://getbootstrap.com/">Bootstrap</a> was central to the base design of the game, and until I decide to create an interface for myself, either when I feel that it is necessary, or when people ask me to change it, this will be the general look for a while.
+										<a class="pointer btn-link" target="_blank" href="http://getbootstrap.com/">Bootstrap</a> ゲームのベースデザインの中心であり、必要だと感じたとき、または人々が私にそれを変更するように頼んだとき、私が自分自身のためにインターフェイスを作成することに決めるまで、これはしばらくの間一般的な外観になります。
 										<br>
 										<br>
 										<a class="pointer btn-link" target="_blank" href="http://bootswatch.com/">Bootswatch</a> is the tool that I used to add the different themes to the game. If anyone wants more themes from this website, I would be happy to add them in.
@@ -7047,16 +7047,16 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Thank you to all Donators and my supporters on Patreon!
+										Patreonのすべてのドナーと私のサポーターに感謝します！
 									</h3>
-									<h4>Patreon:</h4>
+									<h4>パトレオン:</h4>
 									<ul>
-										<li>Tom Paine</li>
-										<li>Gandalfwg</li>
+										<li>トム・ペイン</li>
+										<li>ガンダルフwg</li>
 									</ul>
-									<h4>Paypal Donators:</h4>
+									<h4>ペイパルの寄付者:</h4>
 									<ul>
-										<li>Steve Chahine</li>
+										<li>スティーブ・チャヒネ</li>
 										<li></li>
 									</ul>
 								</td>
@@ -7075,10 +7075,8 @@
 <script type="text/javascript" src="lib/lz-string.min.js"></script>
 <script type="text/javascript" src="lib/handlebars.min.js"></script>
 <script type="text/javascript" src="lib/pnotify.custom.min.js"></script>
-
-<!-- DEBUG -->
+<!-- デバッグを行う -->
 <script type="text/javascript" src="variable.js"></script>
-
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="utils.js"></script>
 <script type="text/javascript" src="updates.js"></script>
@@ -7095,15 +7093,12 @@
 <script type="text/javascript" src="data/interstellarData.js"></script>
 <script type="text/javascript" src="data/starData.js"></script>
 <script type="text/javascript" src="settings.js"></script>
-
 <script type="text/javascript" src="interstellar.js"></script>
 <script type="text/javascript" src="star.js"></script>
 <script type="text/javascript" src="rocketParts.js"></script>
 <script type="text/javascript" src="rocket.js"></script>
-
 <script type="text/javascript" src="stargaze.js"></script>
 <script type="text/javascript" src="data/stargazeData.js"></script>
-
 <script type="text/javascript" src="ui/databoundElement.js"></script>
 <script type="text/javascript" src="ui/gameTabUI.js"></script>
 <script type="text/javascript" src="ui/resourceObserver.js"></script>
@@ -7114,7 +7109,6 @@
 <script type="text/javascript" src="ui/resourceUI.js"></script>
 <script type="text/javascript" src="ui/techUI.js"></script>
 <script type="text/javascript" src="ui/legacyUI.js"></script>
-
 <script type="text/javascript" src="core.js"></script>
 <script type="text/javascript" src="notification.js"></script>
 <script type="text/javascript" src="saving.js"></script>
@@ -7123,8 +7117,6 @@
 <script type="text/javascript" src="solarSystem.js"></script>
 <script type="text/javascript" src="wonder.js"></script>
 <script type="text/javascript" src="solCenter.js"></script>
-
-<!-- RELEASE -->
+<!-- リリース -->
 <!--<script type="text/javascript" src="SpaceCompany.min.js"></script>-->
-
 </html>
