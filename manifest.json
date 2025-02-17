@@ -1,6 +1,6 @@
 {
-  "name": "My PWA App",
-  "short_name": "PWA",
+  "name": "SpaceCompany",
+  "short_name": "SpaceCompany",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
