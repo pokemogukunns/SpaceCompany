@@ -4661,7 +4661,7 @@ if ("serviceWorker" in navigator) {
 										Costs: <span id="unlockPlasmaResearchHydrogenCost">1,500</span> Hydrogen, <span id="unlockPlasmaResearchUraniumCost">1,500</span> Uranium, <span id="unlockPlasmaResearchOilCost">15,000</span> Oil, <span id="unlockPlasmaResearchWoodCost">15,000</span> Wood.
 										<br>
 										<br>
-										<button onclick="unlockPlasmaResearch()" class="btn btn-default">Unlock Plasma Research</button>
+										<button onclick="unlockPlasmaResearch()" class="btn btn-default">プラズマ研究のロックを解除する</button>
 									</span>
 								</td>
 							</tr>
@@ -4674,43 +4674,43 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Energy-Mass Conversion
+										エネルギー質量変換
 									</h2>
 									<span>
-										EMC is a technology only dreamt about back on Earth. Here, it's a reality. You can turn energy and plasma into regular resources, or, with large amounts, you can turn it into rare ones, which you are unable to find and have to make to acquire.
+										EMCは、地球に戻って夢見るだけの技術です。ここで、それは現実です。エネルギーとプラズマを通常の資源に変えたり、大量にしたり、見つけることができず、入手するために作らなければならない希少なものに変えたりすることができます。
 									</span>
 								</td>
 							</tr>
 							<tr id="researchEmc">
 								<td>
 									<h3 class="default btn-link">
-										Research
+										研究
 									</h3>
 									<span>
-										To be given the blueprints for this mysterious machine, the Aliens require both types of energy.
+										この不思議な機械の青写真を与えられるために、エイリアンは両方のタイプのエネルギーを必要とします。
 										<br>
-										Costs: <span id="unlockEmcResearchEnergyCost">75,000</span> Energy, <span id="unlockEmcResearchPlasmaCost">100</span> Plasma.
+										コスト: <span id="unlockEmcResearchEnergyCost">75,000</span> エネルギー, <span id="unlockEmcResearchPlasmaCost">100</span> プラズマ.
 										<br>
 										<br>
-										<button onclick="unlockEmcResearch()" class="btn btn-default">Unlock EMC Machine Research</button>
+										<button onclick="unlockEmcResearch()" class="btn btn-default">EMCマシンリサーチのロックを解除する</button>
 									</span>
 								</td>
 							</tr>
 							<tr id="emcPage" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Uses
+										使う
 									</h3>
 									<p>
-										This is where you can convert your energy and plasma into resources. <b>(Right click to go back X10)</b>
-										<hide class="autoEmcHide hidden"><br>With Auto Emc (unlocked with rebirth), when you can automate multiple, the order will be top to bottom (always Max).</hide>
+										ここでエネルギーとプラズマを資源に変換できます。<b>（右クリックしてX10に戻ります）</b>
+										<hide class="autoEmcHide hidden"><br>Auto Emc（再生でロック解除）を使用すると、複数を自動化できる場合、注文は上から下（常に最大）になります。</hide>
 									</p>
 									<div class="row">
 										<div class="col-md-12">
-											<label>Remaining energy: <span data-bind="energy">N/A</span></label>
+											<label>残りのエネルギー: <span data-bind="energy">N/A</span></label>
 											<br>
-											<label>Remaining plasma: <span data-bind="plasma">N/A</span></label>
-											<button class="btn btn-default pull-right" onmousedown="changeEmcAmount(event)" oncontextmenu="return false;">Converting <span id="emcButton">Max</span></button>
+											<label>残りの血漿: <span data-bind="plasma">N/A</span></label>
+											<button class="btn btn-default pull-right" onmousedown="changeEmcAmount(event)" oncontextmenu="return false;">変換する <span id="emcButton">Max</span></button>
 										</div>
 									</div>
 									<div class="row">
@@ -4718,130 +4718,130 @@ if ("serviceWorker" in navigator) {
 											<div class="table-responsive">
 											<table class="table table-striped">
 												<thead>
-													<th>Cost (Energy)</th>
-													<th>Material</th>
-													<th>Current amount / Storage</th>
+													<th>コスト（エネルギー）</th>
+													<th>素材</th>
+													<th>現在の金額/保管</th>
 													<th></th>
-													<th class="autoEmcHide hidden">Auto Emc</th>
+													<th class="autoEmcHide hidden">車のEmc</th>
 												</thead>
 												<tbody>
 													<tr>
-														<td><span id="uraniumEmcVal">37</span> Energy</td>
-														<td><span id="uraniumEmcAmount">1</span> Uranium</td>
+														<td><span id="uraniumEmcVal">37</span> エネルギー</td>
+														<td><span id="uraniumEmcAmount">1</span> ウラン</td>
 														<td><span id="uraniumConv"><span data-bind="uranium">N/A</span> / <span data-bind="uraniumStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('uranium')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('uranium')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="uraniumAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="lavaEmcVal">42</span> Energy</td>
-														<td><span id="lavaEmcAmount">1</span> Lava</td>
+														<td><span id="lavaEmcVal">42</span> エネルギー</td>
+														<td><span id="lavaEmcAmount">1</span> 溶岩</td>
 														<td><span id="lavaConv"><span data-bind="lava">N/A</span> / <span data-bind="lavaStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('lava')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('lava')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="lavaAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="oilEmcVal">3</span> Energy</td>
-														<td><span id="oilEmcAmount">1</span> Oil</td>
+														<td><span id="oilEmcVal">3</span> エネルギー</td>
+														<td><span id="oilEmcAmount">1</span> オイル</td>
 														<td><span id="oilConv"><span data-bind="oil">N/A</span> / <span data-bind="oilStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('oil')" role="button">Convert</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="oilAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="metalEmcVal">1</span> Energy</td>
-														<td><span id="metalEmcAmount">1</span> Metal</td>
+														<td><span id="metalEmcVal">1</span> エネルギー</td>
+														<td><span id="metalEmcAmount">1</span> 金属</td>
 														<td><span id="metalConv"><span data-bind="metal">N/A</span> / <span data-bind="metalStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('metal')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('metal')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="metalAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="gemEmcVal">3</span> Energy</td>
-														<td><span id="gemEmcAmount">1</span> Gems</td>
+														<td><span id="gemEmcVal">3</span> エネルギー</td>
+														<td><span id="gemEmcAmount">1</span> 宝石</td>
 														<td><span id="gemConv"><span data-bind="gem">N/A</span> / <span data-bind="gemStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('gem')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('gem')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="gemAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="charcoalEmcVal">2</span> Energy</td>
-														<td><span id="charcoalEmcAmount">1</span> Charcoal</td>
+														<td><span id="charcoalEmcVal">2</span> エネルギー</td>
+														<td><span id="charcoalEmcAmount">1</span> 木炭</td>
 														<td><span id="charcoalConv"><span data-bind="charcoal">N/A</span> / <span data-bind="charcoalStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('charcoal')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('charcoal')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="charcoalAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="woodEmcVal">1</span> Energy</td>
-														<td><span id="woodEmcAmount">1</span> Wood</td>
+														<td><span id="woodEmcVal">1</span> エネルギー</td>
+														<td><span id="woodEmcAmount">1</span> 木</td>
 														<td><span id="woodConv"><span data-bind="wood">N/A</span> / <span data-bind="woodStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('wood')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('wood')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="woodAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="siliconEmcVal">23</span> Energy</td>
-														<td><span id="siliconEmcAmount">1</span> Silicon</td>
+														<td><span id="siliconEmcVal">23</span> エネルギー</td>
+														<td><span id="siliconEmcAmount">1</span> シリコン</td>
 														<td><span id="siliconConv"><span data-bind="silicon">N/A</span> / <span data-bind="siliconStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('silicon')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('silicon')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="siliconAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="lunariteEmcVal">15</span> Energy</td>
-														<td><span id="lunariteEmcAmount">1</span> Lunarite</td>
+														<td><span id="lunariteEmcVal">15</span> エネルギー</td>
+														<td><span id="lunariteEmcAmount">1</span> ルナライト</td>
 														<td><span id="lunariteConv"><span data-bind="lunarite">N/A</span> / <span data-bind="lunariteStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('lunarite')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('lunarite')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="lunariteAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="methaneEmcVal">12</span> Energy</td>
-														<td><span id="methaneEmcAmount">1</span> Methane</td>
+														<td><span id="methaneEmcVal">12</span> エネルギー</td>
+														<td><span id="methaneEmcAmount">1</span> メタン</td>
 														<td><span id="methaneConv"><span data-bind="methane">N/A</span> / <span data-bind="methaneStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('methane')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('methane')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="methaneAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="titaniumEmcVal">17</span> Energy</td>
-														<td><span id="titaniumEmcAmount">1</span> Titanium</td>
+														<td><span id="titaniumEmcVal">17</span> エネルギー</td>
+														<td><span id="titaniumEmcAmount">1</span> チタン</td>
 														<td><span id="titaniumConv"><span data-bind="titanium">N/A</span> / <span data-bind="titaniumStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('titanium')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('titanium')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="titaniumAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="goldEmcVal">42</span> Energy</td>
-														<td><span id="goldEmcAmount">1</span> Gold</td>
+														<td><span id="goldEmcVal">42</span> エネルギー</td>
+														<td><span id="goldEmcAmount">1</span> ゴールド</td>
 														<td><span id="goldConv"><span data-bind="gold">N/A</span> / <span data-bind="goldStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('gold')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('gold')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="goldAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="silverEmcVal">42</span> Energy</td>
-														<td><span id="silverEmcAmount">1</span> Silver</td>
+														<td><span id="silverEmcVal">42</span> エネルギー</td>
+														<td><span id="silverEmcAmount">1</span> 銀</td>
 														<td><span id="silverConv"><span data-bind="silver">N/A</span> / <span data-bind="silverStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('silver')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('silver')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="silverAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="hydrogenEmcVal">42</span> Energy</td>
-														<td><span id="hydrogenEmcAmount">1</span> Hydrogen</td>
+														<td><span id="hydrogenEmcVal">42</span> エネルギー</td>
+														<td><span id="hydrogenEmcAmount">1</span> 水素</td>
 														<td><span id="hydrogenConv"><span data-bind="hydrogen">N/A</span> / <span data-bind="hydrogenStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('hydrogen')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('hydrogen')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="hydrogenAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="heliumEmcVal">42</span> Energy</td>
-														<td><span id="heliumEmcAmount">1</span> Helium</td>
+														<td><span id="heliumEmcVal">42</span> エネルギー</td>
+														<td><span id="heliumEmcAmount">1</span> ヘリウム</td>
 														<td><span id="heliumConv"><span data-bind="helium">N/A</span> / <span data-bind="heliumStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('helium')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('helium')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="heliumAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
-														<td><span id="iceEmcVal">42</span> Energy</td>
-														<td><span id="iceEmcAmount">1</span> Ice</td>
+														<td><span id="iceEmcVal">42</span> エネルギー</td>
+														<td><span id="iceEmcAmount">1</span> 氷</td>
 														<td><span id="iceConv"><span data-bind="ice">N/A</span> / <span data-bind="iceStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertEnergy('ice')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertEnergy('ice')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="iceAutoEmc" class="autoEmc" />
 													</tr>
 													<tr id="meteoriteEMC" class="hidden">
-														<td><span id="meteoriteEmcVal">42</span> Plasma</td>
-														<td><span id="meteoriteEmcAmount">1</span> Meteorite</td>
+														<td><span id="meteoriteEmcVal">42</span> プラズマ</td>
+														<td><span id="meteoriteEmcAmount">1</span> 隕石</td>
 														<td><span id="meteoriteConv"><span data-bind="meteorite">N/A</span> / <span data-bind="meteoriteStorage">N/A</span></span></td>
-														<td><button class="btn btn-default pull-right" onclick="convertPlasma('meteorite')" role="button">Convert</button></td>
+														<td><button class="btn btn-default pull-right" onclick="convertPlasma('meteorite')" role="button">改宗する</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="meteoriteAutoEmc" class="autoEmc" />
 													</tr>
 												</tbody>
@@ -4860,25 +4860,25 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Dyson Swarms and Sphere
+										ダイソン群れと球
 									</h2>
 									<span>
-										This technology, unheard of previously, is now a reality, thanks to those in the Sol Scientific Center. The Sphere can provide much energy for millions of years, but at what cost?
+										ソル科学センターの人々のおかげで、以前は前代未聞のこの技術が今や現実になりました。球体は何百万年もの間多くのエネルギーを供給できますが、どのような費用がかかりますか？
 										<br>
 										<br>
-										<b>NB: Dyson Segments' costs are based on the number you have, and are thus reset, when you use them all, or lowered if only partially spent.</b>
+										<b>注：ダイソンセグメントのコストは、あなたが持っている数に基づいており、したがって、それらをすべて使用するとリセットされ、部分的にしか使用されていない場合は引き下げられます。</b>
 									</span>
 								</td>
 							</tr>
 							<tr id="researchDyson">
 								<td>
 									<h3 class="default btn-link">
-										Research
+										研究
 									</h3>
 									<span>
-										To understand this supreme construct, you must request the aliens' help. They require vast amounts of energy and plasma.
+										この最高の構造を理解するには、エイリアンの助けを求めなければなりません。それらは膨大な量のエネルギーとプラズマを必要とします。
 										<br>
-										Costs: <span id="unlockDysonResearchEnergyCost">100,000</span> Energy, <span id="unlockDysonResearchPlasmaCost">10,000</span> Plasma.
+										コスト: <span id="unlockDysonResearchEnergyCost">100,000</span> エネルギー, <span id="unlockDysonResearchPlasmaCost">10,000</span> プラズマ.
 										<br>
 										<br>
 										<button onclick="unlockDysonResearch()" class="btn btn-default">Unlock Dyson Sphere Research</button>
@@ -4888,10 +4888,10 @@ if ("serviceWorker" in navigator) {
 							<tr id="dysonPage" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Construction
+										建設
 									</h3>
 									<span>
-										These mega-structures cannot possibly be built in one piece. They must be created from small segments and forged together around the sun.
+										これらの巨大な構造物は、一枚で建設することはできません。それらは小さな部分から作成され、太陽の周りで一緒に鍛造されなければなりません。
 										<br>
 										The next segment costs: <span id="dysonTitaniumCost">300,000</span> Titanium, <span id="dysonGoldCost">100,000</span> Gold, <span id="dysonSiliconCost">200,000</span> Silicon, <span id="dysonMeteoriteCost">1,000</span> Meteorite, <span id="dysonIceCost">100,000</span> Ice.
 										<br>
@@ -4925,30 +4925,30 @@ if ("serviceWorker" in navigator) {
 												The swarm is an array of solar stations orbiting the sun, and once built, it can produce 25,000 energy per second. However, it requires <span id="swarmRocketFuelCost">250,000</span> rocket fuel in total to put the segments in place.
 												<br>
 												<br>
-												You currently have <span id="dysonPieces">0</span> out of 100 Dyson Segments to create the swarm.
+												あなたは現在持っています <span id="dysonPieces">0</span> 群れを作成するための100のダイソンセグメントのうち。
 												<br>
 												<br>
 											</span>
-											<button onclick="buildSwarm()" class="btn btn-default">Construct Swarm</button>
-											<button onclick="buildDysonTo(100);buildSwarm()" class="btn btn-default">Build up to 100 and Swarm</button>
+											<button onclick="buildSwarm()" class="btn btn-default">群れを構築する</button>
+											<button onclick="buildDysonTo(100);buildSwarm()" class="btn btn-default">100と群れまで構築する</button>
 											<br>
 											<br>
 											<h3 class="default btn-link">
-												Sphere: <span id="sphere">0</span> (Max. <span id="sphereMax">1</span>)
+												球: <span id="sphere">0</span> (マックス. <span id="sphereMax">1</span>)
 											</h3>
 											<span>
-												The entire sphere is a monolithic structure completely surrounding the sun. It will allow for enough energy to get interstellar travel and finally escape this Solar System. It will produce 1,000,000 energy per second.
+												球体全体が太陽を完全に囲むモノリシック構造です。それは、星間を移動し、最終的にこの太陽系から脱出するのに十分なエネルギーを可能にします。それは毎秒1,000,000エネルギーを生成します。
 												<br>
-												Costs: <span id="sphereRocketFuelCost">1.000M</span> Rocket Fuel to assemble the segments.
+												コスト: <span id="sphereRocketFuelCost">1.000M</span> セグメントを組み立てるためのロケット燃料。
 												<br>
 												<br>
-												<span id="buildSphereInfo">You currently have <span id="dysonPieces3">0</span> out of 250 Dyson Segments to build the completed structure.</span>
+												<span id="buildSphereInfo">あなたは現在持っています<span id="dysonPieces3">0</span> 250のダイソンセグメントから完成した構造を構築します。</span>
 												<br>
 												<br>
 											</span>
 											<hide id="buildSphereButton">
-												<button onclick="buildSphere()" class="btn btn-default">Construct Sphere</button>
-												<button onclick="buildDysonTo(250);buildSphere()" class="btn btn-default">Build up to 250 and Sphere</button>
+												<button onclick="buildSphere()" class="btn btn-default">スフィアを構築する</button>
+												<button onclick="buildDysonTo(250);buildSphere()" class="btn btn-default">250とスフィアまで構築する</button>
 											</hide>
 										</hide>
 									</span>
