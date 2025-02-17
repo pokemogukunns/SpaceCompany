@@ -1920,12 +1920,12 @@ if ("serviceWorker" in navigator) {
 							<tr id="methaneStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your methane storage size to <span id="methaneNextStorage">100</span>.
+										メタンの保管サイズをアップグレードする <span id="methaneNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="methaneLimitType">full</span> storage: <b><span id="methaneLimitTime">N/A</span></b>
+										<span id="methaneLimitType">満タン</span>までの残り時間 storage: <b><span id="methaneLimitTime">N/A</span></b>
 										<br>
 										Costs <span id="methaneStorageCost">50</span> Methane, <span id="methaneStorageLunariteCost">20</span> Lunarite.
 									</span>
@@ -1937,39 +1937,39 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Vacuum Cleaner: <span id="vacuum">0</span>
+										バキュームクリーナー: <span id="vacuum">0</span>
 									</h3>
 									<span>
-										Sucks in methane and cleans the planet at the same time!
+										メタンを吸い込み、同時に地球を浄化します！
 										<br>
-										Produces 1 methane per second.
+										毎秒1メタンを生成します。
 										<br>
-										Costs <span id="vacuumLunariteCost">50</span> Lunarite, <span id="vacuumGemCost">500</span> Gems.
+										コスト <span id="vacuumLunariteCost">50</span> ルナライト, <span id="vacuumGemCost">500</span> 宝石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getVacuum()" class="btn btn-default">Get Vacuum Cleaner</button>
-									<button onclick="destroyMachine('vacuum')" class="btn btn-default destroy hidden">Destroy Vacuum Cleaner</button>
+									<button onclick="getVacuum()" class="btn btn-default">掃除機を手に入れる</button>
+									<button onclick="destroyMachine('vacuum')" class="btn btn-default destroy hidden">掃除機を破壊する</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Suction Excavator: <span id="suctionExcavator">0</span>
+										吸引ショベル: <span id="suctionExcavator">0</span>
 									</h3>
 									<span>
-										Sucks more than anything!
+										何よりも最悪だ！
 										<br>
-										Produces 8 methane per second.
+										毎秒8メタンを生成します。
 										<br>
-										Uses 16 Energy per second.
+										毎秒16エネルギーを使用します。
 										<br>
-										Costs <span id="suctionExcavatorLunariteCost">10,000</span> Lunarite, <span id="suctionExcavatorGemCost">800</span> Gems, <span id="suctionExcavatorOilCost">600</span> Oil.
+										コスト <span id="suctionExcavatorLunariteCost">10,000</span> ルナライト, <span id="suctionExcavatorGemCost">800</span> 宝石, <span id="suctionExcavatorOilCost">600</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSuctionExcavator()" class="btn btn-default">Get Suction Excavator</button>
-									<button onclick="destroyMachine('suctionExcavator')" class="btn btn-default destroy hidden">Destroy Suction Excavator</button>
+									<button onclick="getSuctionExcavator()" class="btn btn-default">吸引掘削機を入手する</button>
+									<button onclick="destroyMachine('suctionExcavator')" class="btn btn-default destroy hidden">破壊吸引掘削機</button>
 								</td>
 							</tr>
 							<tr id="methaneTier3" class="hidden">
