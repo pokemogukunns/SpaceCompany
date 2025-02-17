@@ -1038,21 +1038,21 @@ if ("serviceWorker" in navigator) {
 							<tr id="oilTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Fossilator 9000: <span id="fossilator">0</span>
+										フォッシルレーター9000: <span id="fossilator">0</span>
 									</h3>
 									<span>
-										Much better than the 8000 version, this fossilator reverses the fossil fuel cycle. Instead of burning, it creates them from carbon in the air.
+										8000バージョンよりもはるかに優れたこの化石剤は、化石燃料のサイクルを逆転させます。燃焼する代わりに、空気中の炭素からそれらを作成します。
 										<br>
-										Produces 2627 Oil per second.
+										毎秒2627オイルを生産する。
 										<br>
-										Uses 258 Energy per second.
+										毎秒258エネルギーを使用します。
 										<br>
-										Costs <span id='fossilatorUraniumCost'>110000</span> Uranium, <span id='fossilatorCharcoalCost'>96000</span> Charcoal, <span id='fossilatorLavaCost'>167000</span> Lava.
+										コスト <span id='fossilatorUraniumCost'>110000</span> ウラン, <span id='fossilatorCharcoalCost'>96000</span> 木炭, <span id='fossilatorLavaCost'>167000</span> 溶岩.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFossilator()" class="btn btn-default">Get Fossilator 9000</button>
-									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">Destroy Fossilator 9000</button>
+									<button onclick="getFossilator()" class="btn btn-default">化石化器 9000を入手する</button>
+									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">化石化器 9000を破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -1064,15 +1064,15 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Metal
+										金属
 									</h2>
 									<span>
-										Metal is one of the primary resources. It is used for many things, including storage upgrades, machinery and most things in space.
+										金属は主要な資源の1つです。ストレージのアップグレード、機械、宇宙のほとんどのものなど、さまざまなことに使用されています。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('metal')" class="btn btn-default">Gain <span id="metalGain">1</span></div>
+									<div onclick="gainResource('metal')" class="btn btn-default">獲得する <span id="metalGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1224,7 +1224,7 @@ if ("serviceWorker" in navigator) {
 									<span>
 										宝石のストレージサイズをアップグレードする <span id="gemNextStorage">100</span>.
 										<br>
-										までの残り時間 <span id="gemLimitType">full</span> storage: <b><span id="gemLimitTime">N/A</span></b>
+										<span id="gemLimitType">満タン</span>までの残り時間 storage: <b><span id="gemLimitTime">N/A</span></b>
 										<br>
 										Costs <span id="gemStorageCost">50</span> 宝石, <span id="gemStorageMetalCost">20</span> 金属.
 									</span>
@@ -1243,7 +1243,7 @@ if ("serviceWorker" in navigator) {
 										<br>
 										毎秒1個の宝石を生成します。
 										<br>
-										Costs <span id="gemMinerMetalCost">15</span> 金属, <span id="gemMinerGemCost">10</span> 宝石.
+										コスト <span id="gemMinerMetalCost">15</span> 金属, <span id="gemMinerGemCost">10</span> 宝石.
 									</span>
 									<br>
 									<br>
@@ -1323,12 +1323,12 @@ if ("serviceWorker" in navigator) {
 										<br>
 										毎秒260エネルギーを使用します。
 										<br>
-										コスト <span id='diamondChamberUraniumCost'>181,000</span> Uranium, <span id='diamondChamberCharcoalCost'>185,000</span> Charcoal, <span id='diamondChamberMeteoriteCost'>12,500</span> Meteorite.
+										コスト <span id='diamondChamberUraniumCost'>181,000</span> ウラン, <span id='diamondChamberCharcoalCost'>185,000</span> 木炭, <span id='diamondChamberMeteoriteCost'>12,500</span> 隕石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDiamondChamber()" class="btn btn-default">Get Diamond Accretion Chamber</button>
-									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">Destroy Diamond Accretion Chamber</button>
+									<button onclick="getDiamondChamber()" class="btn btn-default">ダイヤモンド蓄積チャンバーを入手する</button>
+									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">ダイヤモンド蓄積チャンバーを破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -1375,109 +1375,109 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Woodburner: <span id="woodburner">0</span>
+										ウッドバーナー: <span id="woodburner">0</span>
 									</h3>
 									<span>
-										Build a shovel for your woodburner.
+										薪ストーブ用のシャベルを作ってください。
 										<br>
-										Produces 1 Charcoal per second.
+										毎秒1木炭を生成します。
 										<br>
-										Uses 2 wood per second.
+										毎秒2本の木材を使用します。
 										<br>
-										Costs <span id="woodburnerMetalCost">10</span> Metal, <span id="woodburnerWoodCost">5</span> Wood.
+										コスト <span id="woodburnerMetalCost">10</span> 金属, <span id="woodburnerWoodCost">5</span> 木.
 									</span>
 									<br>
 									<br>
-									<button onclick="getWoodburner()" class="btn btn-default">Get Woodburner</button>
-									<button onclick="destroyMachine('woodburner')" class="btn btn-default destroy hidden">Destroy Woodburner</button>
+									<button onclick="getWoodburner()" class="btn btn-default">ウッドバーナーを入手する</button>
+									<button onclick="destroyMachine('woodburner')" class="btn btn-default destroy hidden">ウッドバーナーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Furnace: <span id="furnace">0</span>
+										炉: <span id="furnace">0</span>
 									</h3>
 									<span>
-										Furnaces use electric heaters to produce heat to turn Wood into Charcoal. Because of the increased heat, the process is more efficient.
+										炉は電気ヒーターを使用して熱を生成し、木材を木炭に変えます。熱が増すため、プロセスはより効率的です。
 										<br>
-										Produces <span id="furnaceOutput">4</span> Charcoal per second.
+										生産する <span id="furnaceOutput">4</span> 毎秒の木炭。
 										<br>
-										Uses <span id="furnaceWoodInput">6</span> Wood per second.
+										使う <span id="furnaceWoodInput">6</span> 1秒あたりの木材。
 										<br>
-										Uses 3 Energy per second.
+										毎秒3エネルギーを使用します。
 										<br>
-										Costs <span id="furnaceMetalCost">80</span> Metal, <span id="furnaceWoodCost">40</span> Wood, <span id="furnaceOilCost">100</span> Oil.
+										コスト <span id="furnaceMetalCost">80</span> 金属, <span id="furnaceWoodCost">40</span> 木, <span id="furnaceOilCost">100</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFurnace()" class="btn btn-default">Get Furnace</button>
-									<button onclick="destroyMachine('furnace')" class="btn btn-default destroy hidden">Destroy Furnace</button>
+									<button onclick="getFurnace()" class="btn btn-default">炉を手に入れる</button>
+									<button onclick="destroyMachine('furnace')" class="btn btn-default destroy hidden">炉を破壊する</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Industrial Kiln: <span id="kiln">0</span>
+										工業用窯: <span id="kiln">0</span>
 									</h3>
 									<span>
-										These large kilns are much more effective than previous methods of creating charcoal and use less wood to make the same amount as a furnace.
+										これらの大きな窯は、以前の木炭の製造方法よりもはるかに効果的で、炉と同じ量を作るためにより少ない木材を使用します。
 										<br>
-										Produces 53 Charcoal per second.
+										毎秒53チャコールを生成します。
 										<br>
-										Uses 56 Wood per second.
+										毎秒56個の木材を使用します。
 										<br>
-										Uses 13 Energy per second.
+										毎秒13エネルギーを使用します。
 										<br>
-										Costs <span id="kilnLunariteCost">3,500</span> Lunarite, <span id="kilnGemCost">6,200</span> Gems, <span id="kilnSiliconCost">3,800</span> Silicon.
+										コスト <span id="kilnLunariteCost">3,500</span> ルナライト, <span id="kilnGemCost">6,200</span> 宝石, <span id="kilnSiliconCost">3,800</span> シリコン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getKiln()" class="btn btn-default">Get Industrial Kiln</button>
-									<button onclick="destroyMachine('kiln')" class="btn btn-default destroy hidden">Destroy Industrial Kiln</button>
+									<button onclick="getKiln()" class="btn btn-default">工業用窯を手に入れる</button>
+									<button onclick="destroyMachine('kiln')" class="btn btn-default destroy hidden">工業用窯を破壊する</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Forest Fryer: <span id="fryer">0</span>
+										フォレストフライヤー: <span id="fryer">0</span>
 									</h3>
 									<span>
-										Forests? What forests?
+										森？どんな森？
 										<br>
-										Produces 210 Charcoal per second.
+										毎秒210チャコールを生成します。
 										<br>
-										Uses 148 Wood per second.
+										毎秒148個の木材を使用します。
 										<br>
-										Uses 34 Energy per second.
+										毎秒34エネルギーを使用します。
 										<br>
-										Costs <span id="fryerLunariteCost">15,800</span> Lunarite, <span id="fryerLavaCost">12,500</span> Lava, <span id="fryerMeteoriteCost">560</span> Meteorite.
+										コスト <span id="fryerLunariteCost">15,800</span> ルナライト, <span id="fryerLavaCost">12,500</span> 溶岩, <span id="fryerMeteoriteCost">560</span> 隕石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFryer()" class="btn btn-default">Get Forest Fryer</button>
-									<button onclick="destroyMachine('fryer')" class="btn btn-default destroy hidden">Destroy Forest Fryer</button>
+									<button onclick="getFryer()" class="btn btn-default">フォレストフライヤーを入手</button>
+									<button onclick="destroyMachine('fryer')" class="btn btn-default destroy hidden">フォレストフライヤーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Microverse Pollutor: <span id="microPollutor">0</span>
+										マイクロバース汚染者: <span id="microPollutor">0</span>
 									</h3>
 									<span>
-										Using Nano-technology, tiny universes can be created, filled with toxic gases from charcoal production and simply deleted. Cross-dimensional pollution at a completely new level!
+										ナノテクノロジーを使用して、小さな宇宙を作成し、木炭生産からの有毒ガスで満たし、単に削除することができます。まったく新しいレベルの次元横断的な汚染！
 										<br>
-										Produces 2267 Charcoal per second.
+										毎秒2267木炭を生成します。
 										<br>
-										Uses 950 Wood per second.
+										毎秒950個の木材を使用します。
 										<br>
-										Uses 187 Energy per second.
+										毎秒187エネルギーを使用します。
 										<br>
-										Costs <span id='microPollutorMetalCost'>133000</span> Metal, <span id='microPollutorWoodCost'>189000</span> Wood, <span id='microPollutorLavaCost'>160000</span> Lava.
+										コスト <span id='microPollutorMetalCost'>133000</span> 金属, <span id='microPollutorWoodCost'>189000</span> 木, <span id='microPollutorLavaCost'>160000</span> 溶岩.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMicroPollutor()" class="btn btn-default">Get Microverse Pollutor</button>
-									<button onclick="destroyMachine('microPollutor')" class="btn btn-default destroy hidden">Destroy Microverse Pollutor</button>
+									<button onclick="getMicroPollutor()" class="btn btn-default">マイクロバース汚染物質を入手する</button>
+									<button onclick="destroyMachine('microPollutor')" class="btn btn-default destroy hidden">マイクロバース汚染物質を破壊する</button>
 								</td>
 							</tr>
 						</table>
