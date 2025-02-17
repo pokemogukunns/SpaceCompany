@@ -4,7 +4,7 @@
 <body style="height:100%">
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("serviceWorker.js")
+  navigator.serviceWorker.register("./serviceWorker.js")
     .then(() => console.log("Service Worker registered"))
     .catch((err) => console.log("Service Worker registration failed:", err));
 }
