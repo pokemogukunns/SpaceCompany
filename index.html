@@ -1506,131 +1506,137 @@ if ("serviceWorker" in navigator) {
 							<tr id="woodStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your wood storage size to <span id="woodNextStorage">100</span>.
+										木材の保管サイズをアップグレードする<span id="woodNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="woodLimitType">full</span> storage: <b><span id="woodLimitTime">N/A</span></b>
+										<span id="woodLimitType">満タン</span>までの残り時間  容量: <b><span id="woodLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="woodStorageCost">50</span> wood, <span id="woodStorageMetalCost">20</span> Metal.
+										コスト <span id="woodStorageCost">50</span> 木, <span id="woodStorageMetalCost">20</span> 金属.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeWoodStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeWoodStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Woodcutter: <span id="woodcutter">0</span>
+										きこり: <span id="woodcutter">0</span>
 									</h3>
 									<span>
-										Build an axe for your woodcutter.
+										木工用の斧を作りましょう。
 										<br>
-										Produces 1 wood per second.
+										毎秒1個の木材を生産します。
 										<br>
-										Costs <span id="woodcutterMetalCost">10</span> Metal, <span id="woodcutterWoodCost">5</span> Wood.
+										コスト <span id="woodcutterMetalCost">10</span> 金属, <span id="woodcutterWoodCost">5</span> 木.
 									</span>
 									<br>
 									<br>
-									<button onclick="getWoodcutter()" class="btn btn-default">Get Woodcutter</button>
-									<button onclick="destroyMachine('woodcutter')" class="btn btn-default destroy hidden">Destroy Woodcutter</button>
+									<button onclick="getWoodcutter()" class="btn btn-default">木こりを手に入れる</button>
+									<button onclick="destroyMachine('woodcutter')" class="btn btn-default destroy hidden">木こりを破壊する</button>
 								</td>
 							</tr>
 							<tr id="woodTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Laser Cutter: <span id="laserCutter">0</span>
+										レーザーカッター: <span id="laserCutter">0</span>
 									</h3>
 									<span>
-										Laser Cutters slice trees (and fingers) more quickly than axes and produce a lot more wood.
+										レーザーカッターは、斧よりも速く木（および指）を切断し、より多くの木材を生産します。
 										<br>
-										Produces <span id="laserCutterOutput">6</span> wood per second.
+										生産する <span id="laserCutterOutput">6</span>木毎秒.
 										<br>
-										Uses 4 Energy per second.
+										毎秒4エネルギーを使用します。
 										<br>
-										Costs <span id="laserCutterMetalCost">50</span> Metal, <span id="laserCutterGemCost">90</span> Gems, <span id="laserCutterOilCost">40</span> Oil.
+										コスト <span id="laserCutterMetalCost">50</span> 金属, <span id="laserCutterGemCost">90</span> 宝石, <span id="laserCutterOilCost">40</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getLaserCutter()" class="btn btn-default">Get Laser Cutter</button>
-									<button onclick="destroyMachine('laserCutter')" class="btn btn-default destroy hidden">Destroy Laser Cutter</button>
+									<button onclick="getLaserCutter()" class="btn btn-default">レーザーカッターを入手</button>
+									<button onclick="destroyMachine('laserCutter')" class="btn btn-default destroy hidden">レーザーカッターを破壊する</button>
 								</td>
 							</tr>
 							<tr id="woodTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Mass Deforester: <span id="deforester">0</span>
+										大量森林破壊者: <span id="deforester">0</span>
 									</h3>
 									<span>
-										This machine is the reason we're losing our rainforests. At least we get lots of wood!
+										この機械は、私たちが熱帯雨林を失っている理由です。少なくとも私たちはたくさんの木を手に入れます！
 										<br>
-										Produces <span id="deforesterOutput">74</span> wood per second.
+										生産する<span id="deforesterOutput">74</span>1秒あたりの木材。
 										<br>
-										Uses 16 Energy per second.
+										毎秒16エネルギーを使用します。
 										<br>
-										Costs <span id="deforesterLunariteCost">3,000</span> Lunarite, <span id="deforesterTitaniumCost">2,700</span> Titanium, <span id="deforesterSiliconCost">2,500</span> Silicon.
+										コスト <span id="deforesterLunariteCost">3,000</span> ルナライト, <span id="deforesterTitaniumCost">2,700</span> チタン, <span id="deforesterSiliconCost">2,500</span> シリコン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDeforester()" class="btn btn-default">Get Mass Deforester</button>
-									<button onclick="destroyMachine('deforester')" class="btn btn-default destroy hidden">Destroy Mass Deforester</button>
+									<button onclick="getDeforester()" class="btn btn-default">大量森林破壊者を入手する</button>
+									<button onclick="destroyMachine('deforester')" class="btn btn-default destroy hidden">大量森林破壊者を破壊する</button>
 								</td>
 							</tr>
 							<tr id="woodTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Biomass Infuser: <span id="infuser">0</span>
+										バイオマスインフューザー: <span id="infuser">0</span>
 									</h3>
 									<span>
-										Creates Wood using old, useless materials found everywhere on Earth by crushing them and packing what remains as densely as possible until it can be used as Wood again.
+										地球上のいたるところに見られる古くて役に立たない材料を使用して木材を作り、それらを粉砕し、再び木材として使用できるまでできるだけ密集して梱包します。
 										<br>
-										Produces 297 wood per second.
+										毎秒297個の木材を生産します。
 										<br>
-										Uses 43 Energy per second.
+										毎秒43エネルギーを使用します。
 										<br>
-										Costs <span id="infuserLunariteCost">16,000</span> Lunarite, <span id="infuserOilCost">31,200</span> Oil, <span id="infuserMeteoriteCost">490</span> Meteorite.
+										コスト <span id="infuserLunariteCost">16,000</span> ルナライト, <span id="infuserOilCost">31,200</span> オイル、<span id="infuserMeteoriteCost">490</span> 隕石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getInfuser()" class="btn btn-default">Get Biomass Infuser</button>
-									<button onclick="destroyMachine('infuser')" class="btn btn-default destroy hidden">Destroy Biomass Infuser</button>
+									<button onclick="getInfuser()" class="btn btn-default">バイオマスインフューザーを入手する</button>
+									<button onclick="destroyMachine('infuser')" class="btn btn-default destroy hidden">バイオマスインフューザーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="woodTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Russian Forest: <span id="forest">0</span>
+										ロシアの森: <span id="forest">0</span>
 									</h3>
 									<span>
-										The great Russian forests span thousands of miles. More than enough for at least your lifetime. Let the younger generation deal with running out.
+										ロシアの偉大な森は何千マイルにも及ぶ。少なくともあなたの一生には十分すぎるほどです。若い世代に使い果たしに対処させてください。
 										<br>
-										Produces 3278 wood per second.
+										毎秒3278個の木材を生産します。
 										<br>
-										Uses 244 Energy per second.
+										毎秒244エネルギーを使用します。
 										<br>
-										Costs <span id='forestMetalCost'>122000</span> Metal, <span id='forestGemCost'>151000</span> Gems, <span id='forestHydrogenCost'>183000</span> Hydrogen.
+										コスト <span id='forestMetalCost'>122000</span> 金属, <span id='forestGemCost'>151000</span> 宝石, <span id='forestHydrogenCost'>183000</span> 水素。
 									</span>
 									<br>
 									<br>
-									<button onclick="getForest()" class="btn btn-default">Get Russian Forest</button>
-									<button onclick="destroyMachine('forest')" class="btn btn-default destroy hidden">Destroy Russian Forest</button>
+									<button onclick="getForest()" class="btn btn-default">ロシアの森を手に入れよう</button>
+									<button onclick="destroyMachine('forest')" class="btn btn-default destroy hidden">ロシアの森林を破壊する</button>
 								</td>
 							</tr>
 						</table>
 					</div>
 				</div>
+
+
+
+
+
+				
 				<div id="siliconTab" class="tab-pane fade in" style="margin-left:10px; width:100px; float:left;">
 					<div class="container" style="max-width:800px;">
 						<table class="table">
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Silicon
+										シリコン
 									</h2>
 									<span>
-										Silicon is useful for automatic mining systems of the third tier. These will be very useful in building your first wonder. Despite being a high tier resource, it is found mainly on Earth by heating sand.
+										シリコンは、第3層の自動マイニングシステムに役立ちます。これらは、あなたの最初の驚異を構築するのに非常に役立ちます。高層資源であるにもかかわらず、主に砂を加熱することによって地球上で発見されています。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -1644,91 +1650,91 @@ if ("serviceWorker" in navigator) {
 							<tr id="siliconStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Silicon storage size to <span id="siliconNextStorage">100</span>.
+										シリコンストレージサイズをアップグレードする<span id="siliconNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="siliconLimitType">full</span> storage: <b><span id="siliconLimitTime">N/A</span></b>
+										<span id="siliconLimitType">満タン</span>までの残り時間  容量: <b><span id="siliconLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="siliconStorageCost">50</span> Silicon, <span id="siliconStorageLunariteCost">20</span> Lunarite.
+										コスト <span id="siliconStorageCost">50</span> シリコン, <span id="siliconStorageLunariteCost">20</span> ルナライト
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeSiliconStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeSiliconStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Empowered Blowtorch: <span id="blowtorch">0</span>
+										エンパワードブロートーチ: <span id="blowtorch">0</span>
 									</h3>
 									<span>
-										This type of blowtorch instantly turns sand into Silicon, but only on a small scale. To make it, extraterrestrial resources are required.
+										このタイプのブロートーチは、砂を即座にシリコンに変えますが、それは小規模です。それを作るためには、地球外資源が必要です。
 										<br>
-										Produces 1 silicon per second.
+										毎秒1シリコンを生成します。
 										<br>
-										Costs <span id="blowtorchLunariteCost">150</span> Lunarite, <span id="blowtorchTitaniumCost">30</span> Titanium.
+										コスト <span id="blowtorchLunariteCost">150</span> ルナライト, <span id="blowtorchTitaniumCost">30</span> チタン.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBlowtorch()" class="btn btn-default">Get Blowtorch</button>
-									<button onclick="destroyMachine('blowtorch')" class="btn btn-default destroy hidden">Destroy Empowered Blowtorch</button>
+									<button onclick="getBlowtorch()" class="btn btn-default">ブロートーチを入手する</button>
+									<button onclick="destroyMachine('blowtorch')" class="btn btn-default destroy hidden">エンパワードブロートーチを破壊する</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Seaside Scorcher: <span id="scorcher">0</span>
+										シーサイド・スカーチャー: <span id="scorcher">0</span>
 									</h3>
 									<span>
-										This tool almost melts parts of beaches to get silicon at a larger scale.
+										このツールは、より大きな規模でシリコンを得るために、ビーチの一部をほぼ溶かします。
 										<br>
-										Produces 9 silicon per second.
+										毎秒9シリコンを生成します。
 										<br>
-										Uses 18 Energy per second.
+										毎秒18エネルギーを使用します。
 										<br>
-										Costs <span id="scorcherLunariteCost">500</span> Lunarite, <span id="scorcherGemCost">1,200</span> Gems, <span id="scorcherOilCost">1,600</span> Oil.
+										コスト <span id="scorcherLunariteCost">500</span> ルナライト, <span id="scorcherGemCost">1,200</span> 宝石, <span id="scorcherOilCost">1,600</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getScorcher()" class="btn btn-default">Get Seaside Scorcher</button>
-									<button onclick="destroyMachine('scorcher')" class="btn btn-default destroy hidden">Destroy Scorcher</button>
+									<button onclick="getScorcher()" class="btn btn-default">シーサイドスコーチャーを入手</button>
+									<button onclick="destroyMachine('scorcher')" class="btn btn-default destroy hidden">スカーチャーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="siliconTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Beach Annihilator: <span id="annihilator">0</span>
+										ビーチアニヒレーター: <span id="annihilator">0</span>
 									</h3>
 									<span>
-										This weapon of mass destruction has been re-labelled and now hovers above coast-lines, or what is now left of them.
+										この大量破壊兵器は再ラベル付けされ、現在は海岸線、または現在残っている海岸線の上に浮かんでいます。
 										<br>
-										Produces 40 silicon per second.
+										毎秒40シリコンを生成します。
 										<br>
-										Uses 53 Energy per second.
+										毎秒53エネルギーを使用します。
 										<br>
-										Costs <span id="annihilatorLunariteCost">3,000</span> Lunarite, <span id="annihilatorGemCost">8,300</span> Gems, <span id="annihilatorSilverCost">2,400</span> Silver.
+										Costs <span id="annihilatorLunariteCost">3,000</span> ルナライト, <span id="annihilatorGemCost">8,300</span> 宝石, <span id="annihilatorSilverCost">2,400</span> 銀.
 									</span>
 									<br>
 									<br>
-									<button onclick="getAnnihilator()" class="btn btn-default">Get Annihilator</button>
-									<button onclick="destroyMachine('annihilator')" class="btn btn-default destroy hidden">Destroy Beach Annihilator</button>
+									<button onclick="getAnnihilator()" class="btn btn-default">消滅器を入手する</button>
+									<button onclick="destroyMachine('annihilator')" class="btn btn-default destroy hidden">ビーチアニヒレーターを破壊する</button>
 								</td>
 							</tr>
 							<tr id="siliconTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Desert Destroyer: <span id="desert">0</span>
+										砂漠の駆逐艦: <span id="desert">0</span>
 									</h3>
 									<span>
-										This large ship orbits around the planet, focused on the Sahara Desert, tearing up sand from Earth and turning it into Silicon under intense heat.
+										この大きな船は、サハラ砂漠に焦点を当てて地球を周回し、地球から砂を引き裂き、強烈な熱の下でシリコンに変えます。
 										<br>
-										Produces 157 silicon per second.
+										毎秒157シリコンを生成します。
 										<br>
-										Uses 138 Energy per second.
+										毎秒138エネルギーを使用します。
 										<br>
-										Costs <span id="desertLunariteCost">20,000</span> Lunarite, <span id="desertSiliconCost">17,700</span> Silicon, <span id="desertMeteoriteCost">400</span> Meteorite.
+										コスト <span id="desertLunariteCost">20,000</span> ルナライト, <span id="desertSiliconCost">17,700</span> シリコン, <span id="desertMeteoriteCost">400</span> 隕石.
 									</span>
 									<br>
 									<br>
@@ -1739,41 +1745,42 @@ if ("serviceWorker" in navigator) {
 							<tr id="siliconTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Time And Relative Dimensions In Sand: <span id="tardis">0</span>
+										砂の時間と相対寸法: <span id="tardis">0</span>
 									</h3>
 									<span>
-										The TARDIS, for short, harnesses the power of stars from far away in space-time to heat sand into Silicon at record speeds. 
+										略して、TARDISは、宇宙空間の遠くからの星の力を利用して、記録的な速度でシリコンに砂を加熱します。
 										<br>
-										Produces 1487 silicon per second.
+										毎秒1487シリコンを生成します。
 										<br>
-										Uses 746 Energy per second.
+										毎秒746エネルギーを使用します。
 										<br>
-										Costs <span id='tardisTitaniumCost'>204000</span> Titanium, <span id='tardisSiliconCost'>205000</span> Silicon, <span id='tardisMeteoriteCost'>17800</span> Meterorite.
+										コスト <span id='tardisTitaniumCost'>204000</span> チタン, <span id='tardisSiliconCost'>205000</span> シリコン、<span id='tardisMeteoriteCost'>17800</span> メテロライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="getTardis()" class="btn btn-default">Get T.A.R.D.I.S.</button>
-									<button onclick="destroyMachine('tardis')" class="btn btn-default destroy hidden">Destroy T.A.R.D.I.S.</button>
+									<button onclick="getTardis()" class="btn btn-default">T.A.R.D.I.S.を入手する</button>
+									<button onclick="destroyMachine('tardis')" class="btn btn-default destroy hidden">T.A.R.D.I.S.を破壊する</button>
 								</td>
 							</tr>
 						</table>
 					</div>
 				</div>
+				
 				<div id="lunariteTab" class="tab-pane fade in" style="margin-left:10px; width:100px; float:left;">
 					<div class="container" style="max-width:800px;">
 						<table class="table">
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Lunarite
+										ルナライト
 									</h2>
 									<span>
-										Lunarite is found on the Moon and is a rare type of resource not found on Earth. It is much stronger than regular metal but is a lot harder to get.
+										ルナライトは月に存在し、地球上には見られない希少な種類の資源です。通常の金属よりもはるかに強力ですが、入手がはるかに困難です。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('lunarite')" class="btn btn-default">Gain <span id="lunariteGain">1</span></div>
+									<div onclick="gainResource('lunarite')" class="btn btn-default">獲得する <span id="lunariteGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1782,51 +1789,51 @@ if ("serviceWorker" in navigator) {
 							<tr id="lunariteStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Lunarite storage size to <span id="lunariteNextStorage">100</span>.
+										ルナライトのストレージサイズをアップグレードして<span id="lunariteNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="lunariteLimitType">full</span> storage: <b><span id="lunariteLimitTime">N/A</span></b>
+										<span id="lunariteLimitType">満タン</span>までの残り時間  容量: <b><span id="lunariteLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="lunariteStorageCost">50</span> Lunarite, <span id="lunariteStorageMetalCost">200</span> Metal.
+										コスト <span id="lunariteStorageCost">50</span> ルナライト, <span id="lunariteStorageMetalCost">200</span> 金属.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeLunariteStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeLunariteStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Native Moon Worker: <span id="moonWorker">0</span>
+										ネイティブムーンワーカー: <span id="moonWorker">0</span>
 									</h3>
 									<span>
-										Bribe local workers to mine your Lunarite.
+										地元の労働者に賄賂を贈り、ルナライトを採掘してください。
 										<br>
-										Produces 1 Lunarite per second.
+										毎秒1ルナライトを生成します。
 										<br>
-										Costs <span id="moonWorkerGemCost">500</span> Gems.
+										コスト <span id="moonWorkerGemCost">500</span> 宝石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonWorker()" class="btn btn-default">Get Moon Worker</button>
-									<button onclick="destroyMachine('moonWorker')" class="btn btn-default destroy hidden">Fire Moon Worker</button>
+									<button onclick="getMoonWorker()" class="btn btn-default">ムーンワーカーを入手する</button>
+									<button onclick="destroyMachine('moonWorker')" class="btn btn-default destroy hidden">ファイヤームーンワーカー</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Low-Gravity Drill: <span id="moonDrill">0</span>
+										低重力ドリル: <span id="moonDrill">0</span>
 									</h3>
 									<span>
-										These drills practically float!
+										これらのドリルは実質的に浮いています！
 										<br>
-										Produces 10 Lunarite per second.
+										毎秒10ルナライトを生成します。
 										<br>
-										Uses 20 Energy per second.
+										毎秒20エネルギーを使用します。
 										<br>
-										Costs <span id="moonDrillMetalCost">1,000</span> Metal, <span id="moonDrillGemCost">600</span> Gems, <span id="moonDrillOilCost">400</span> Oil.
+										コスト <span id="moonDrillMetalCost">1,000</span> 金属, <span id="moonDrillGemCost">600</span> Gems, <span id="moonDrillOilCost">400</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1975,16 +1982,16 @@ if ("serviceWorker" in navigator) {
 							<tr id="methaneTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Space Cow Plantation: <span id="spaceCow">0</span>
+										スペースカウプランテーション: <span id="spaceCow">0</span>
 									</h3>
 									<span>
-										These hold cows genetically moodified to produce methane constantly.
+										これらは、常にメタンを生成するために遺伝的に気分化された牛を保持しています。
 										<br>
-										Produces 37 methane per second.
+										毎秒37個のメタンを生成します。
 										<br>
-										Uses 49 Energy per second.
+										毎秒49エネルギーを使用します。
 										<br>
-										Costs <span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
+										コスト <span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2179,7 +2186,7 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Gold
+										ゴールド
 									</h2>
 									<span>
 										Gold is a metal found inside asteroids. It is used to build some Wonders and for complex machinery.
