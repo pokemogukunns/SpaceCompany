@@ -1,23 +1,35 @@
-MIT License
+MITライセンス
 
-Copyright (c) 2017 sparticle999
+著作権 (c) 2017 sparticle999
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+コピーを入手した人には、無料で許可が付与されます。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+このソフトウェアおよび関連するドキュメントファイル（「ソフトウェア」）の、対処する
 
-Sparticle999 is made aware that the Software has been used somewhere else.
+権利を含むがこれらに限定されない制限のないソフトウェアで
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+使用、コピー、変更、マージ、公開、配布、サブライセンス、および/または販売する
+
+ソフトウェアのコピー、およびソフトウェアが対象の人を許可する
+
+以下の条件に従い、そうするように装備されています。
+
+上記の著作権表示とこの許可表示は、すべてに含まれるものとします。
+
+ソフトウェアのコピーまたは大部分。
+
+Sparticle999は、ソフトウェアが他の場所で使用されていることを認識しています。
+
+ソフトウェアは「現状のまま」提供され、いかなる種類の保証もなく、明示的または
+
+黙示、商品性の保証を含むがこれらに限定されない、
+
+特定の目的への適合性と非侵害。いかなる場合も
+
+著者または著作権者は、いかなる請求、損害、またはその他の
+
+責任は、契約、不法行為、またはその他の行為にかかわらず、
+
+ソフトウェア、使用、またはその他の取引に関連して
+
+ソフトウェア。
