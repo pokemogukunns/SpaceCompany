@@ -128,273 +128,449 @@ V0.5.1 進行中
 
 ##### 小さな変化
 
-- Individual buttons to turn off Plasma and Meteorite Machines
-- Turn-off switch for all energy producers/consumers
-- Alternative scientific formatting
-- Made it clear that Dyson Sections Costs reset when used
-- 'Off' Option For Autosaving
-- Science Forced 1 Decimal Until 100
-- Cleared Up Misconceptions With 'NB:' Notes
-- Uranium + Plasma Achievements
-- Changed Some Descriptions
-- Made Red Bold Costs Also Underlined
-- Allow decreasing EMC amount with right click
-- Changed Version Number System to include 4th digit
-- Made EMC Max By Default
-- Import Checks For Empty Field To Refuse Load
-- Fixed Typos
-- Fixed Interstellar Backwards Compatibility
-- Changed Dyson Parts Buying To Buy Parts And Build Dyson
-- Destroy Alcubierre Drive Button
-- Nerfed Energy Efficiency to be 1000x cheaper, but only go up to 25%
-- Changed Multibuy researches to show current level instead of next level
-- Buffed Battery Efficiency to 200 levels instead of 50
-- Nerfed Rocket Fuel Research Costs
-- Buffed Hydrazine Production
-- Achievement Number Formatting
-- Rocket Fuel Machine Achievements
-- Refactored EMC (behind the scenes)
-- Optimised Saving and Loading
-- Time until storage full now shows until empty if negative gain
-- Reset achievements
-- Standardised gainResource() function
-- Achievement Stars are worth their position
+- プラズマとメテオライトマシンをオフにする個々のボタン
+
+- すべてのエネルギー生産者/消費者のためのオフスイッチ
+
+- 代替科学フォーマット
+
+- ダイソンセクションのコストは、使用時にリセットされることを明確にしました。
+
+- 自動保存の「オフ」オプション
+
+- 科学は100まで小数点以下1を強制した
+
+- 「NB:」ノートで誤解を解消
+
+- ウラン+プラズマの成果
+
+- いくつかの説明を変更しました
+
+- 赤い太字のコストも下線が引いた
+
+- 右クリックでEMC量を減らすことができます
+
+- 4桁目を含むようにバージョン番号システムを変更しました
+
+- デフォルトでEMC Maxを製造
+
+- 読み込みを拒否する空のフィールドのインポートチェック
+
+- 誤字脱字を修正
+
+- 修正された星間後方互換性
+
+- ダイソンの部品購入を変更し、部品を購入し、ダイソンを構築します。
+
+- アルキュビエールドライブボタンを破壊する
+
+- ナーフェドエネルギー効率は1000倍安いが、25%までしか上がらない
+
+- マルチバイの調査を変更して、次のレベルではなく現在のレベルを表示します。
+
+- バッテリー効率を50レベルではなく200レベルに向上
+
+- ナーフェドロケット燃料研究コスト
+
+- バフヒドラジン生産
+
+- アチーブメント番号のフォーマット
+
+- ロケット燃料機械の実績
+
+- リファクタリングされたEMC（舞台裏）
+
+- 最適化された保存と読み込み
+
+- マイナスゲインの場合、ストレージがいっぱいになるまでの時間が空になるまで表示されます。
+
+- 成果をリセットする
+
+- 標準化されたgainResource()関数
+
+- アチーブメントスターは彼らの地位に値する
 
 ##### バグ修正
 
-- Fixed Bug With Solar System Sidebar
-- Fixed Unlocked Tabs Statistic Bug
-- Fixed Rocket Launching Costs Not Being Red
-- Fixed Antimatter Tab Highlighting Sticking
-- Fixed Typos
-- Fixed Rocket Wonder Not Working
-- Fixed Solar Panel Showing Incorrect Output
-- Fixed Interstellar Tab Not Loading Values
-- Fixed Collapse Outer Solar System SideBarTab Visual Bug
-- Fixed Portal Room Helium Bug
-- Fixed Whitespace Bug on Plasma Tab
-- Fixed Infinite Meteorite Bug
-- Fixed Stargate Not Deducting Resources
-- Fixed Dyson Sections Cost Bug
-- Fixed Plasma EMC Display Bug
-- Fixed Stargate Red Costs Bug
-- Fixed T3 Battery Lunarite Cost Not Saving
-- Fixed UI Bug With Certain Themes
-- Fixed Rocket Building Not Saving
-- Fixed Antimatter Decimals Not Being Uniform
-- Fixed Batteries Not Unlocking Without Refresh
-- Fixed Interstellar Backwards Compatibility
-- Fixed Browser Compatibility Problem
-- Fixed Antimatter Not Turning Green On Full Storage
-- Fixed Hydrazine Research Cost Not Turning Red
-- Fixed Antimatter Going Above 100k
-- Fixed Buying Multiple Solar System Rockets
-- Fixed T4 Science unlocking only after refresh
-- Fixed Hydrazine Not Getting Resource Efficiency
-- Fixed Exponential Notation UI
-- Fixed Typos
-- Fixed Stargaze not showing up until refresh
-- Fixed Silicon Achievement not existing
-- Fixed Logo not animating
+- ソーラーシステムのサイドバーのバグを修正しました
+
+- ロック解除されたタブの統計バグを修正しました
+
+- 固定されたロケット打ち上げコストは赤ではない
+
+- アンチマタータブの強調表示の固着を修正
+
+- 誤字脱字を修正
+
+- 固定されたロケットワンダーが機能しない
+
+- 間違った出力を示す固定ソーラーパネル
+
+- 値をロードしない星間タブを修正
+
+- 外部太陽系のサイドバータブの視覚的なバグを修正しました。
+
+- 固定ポータルルームヘリウムバグ
+
+- プラズマタブの空白バグを修正
+
+- 無限隕石バグの修正
+
+- リソースを差し引かない修正されたスターゲート
+
+- ダイソンセクションのコストバグを修正
+
+- プラズマEMCディスプレイのバグを修正
+
+- 修正されたスターゲートレッドコストバグ
+
+- 固定T3バッテリールナライトコストは節約できない
+
+- 特定のテーマのUIバグを修正
+
+- 固定されたロケットビルが保存されない
+
+- 不均一ではない反物質小数点を修正
+
+- 修正されたバッテリーがリフレッシュしないとロック解除されない
+
+- 修正された星間後方互換性
+
+- ブラウザの互換性の問題を修正しました
+
+- 完全なストレージで緑色に回らない反物質を修正しました
+
+- 固定ヒドラジン研究コストが赤字にならない
+
+- 100kを超える固定反物質
+
+- 複数の太陽系ロケットの購入を固定
+
+- リフレッシュ後のみT4サイエンスのロック解除を修正しました
+
+- ヒドラジンが資源効率を得ない固定
+
+- 固定指数表記UI
+
+- 誤字脱字を修正
+
+- リフレッシュするまでStargazeが表示されない問題を修正
+
+- 固定シリコンアチーブメントは存在しない
+
+- アニメーション化されていない固定ロゴ
 
 ### v0.4.4
 ##### 特徴
-- Dyson Ring
-- Infinite Research
-- Overhauled Behind The Scenes Stuff - Made everything data driven
-- Notifications
-- Game Now Works in an Inactive Tab
-- Tier 2 Batteries
-- Tier 2 Rocket Fuel
-- Sidebar Nav Compression
-- Options For Number Format
+- ダイソンリング
+
+- 無限の研究
+
+- オーバーホールされた舞台裏のもの - すべてをデータ駆動にしました
+
+- 通知
+
+- ゲームは現在、非アクティブなタブで動作します
+
+- ティア2バッテリー
+
+- ティア2ロケット燃料
+
+- サイドバーナビゲーション圧縮
+
+- 数字フォーマットのオプション
 
 ##### 小さな変化
 
-- Reworked EMC UI
-- Energy Conversion Changes
-- Reworded Chemical Plant Description
-- Reprogrammed Charcoal Production
-- Changed Laboratory Names and Descriptions
-- Destruction of Rocket Fuel Machines
-- Changed Order of Achievements
-- Prevented Building Multiple Dyson Spheres
-- Made All Numbers >1000 4 Digits Long
-- Changed Ice T4 to use Wood
-- Days on Time Stats
-- Changed Links in FAQ to open in new tab
-- Notifications for Achievements and Autosaving and for when Storage is full
-- Reduced Info Overload on Getting Started Tab
-- Added LICENCE.txt
+- 再加工されたEMC UI
 
+- エネルギー変換の変化
+
+- 化学プラントの説明を言い換える
+
+- 再プログラムされた木炭生産
+
+- 実験室の名前と説明を変更しました
+
+- ロケット燃料機械の破壊
+
+- 達成の順序を変更しました
+
+- 複数のダイソン球体の構築を防止
+
+- すべての数字を1000個以上4桁の長さにしました
+
+- 木材を使用するようにIce T4を変更しました
+
+- 時間統計の日数
+
+- 新しいタブで開くようにFAQのリンクを変更しました
+
+- 実績と自動保存、およびストレージがいっぱいになると通知
+
+- はじめにタブの情報過多の軽減
+
+- LICENCE.txtを追加しました
 ##### バグ修正
 
-- Fixed Oil Rig Costs
-- Fixed Helium T4 Red Costs
-- Fixed Dyson Section Reset Costs
-- Fixed Cyborg UI Bug
-- Fixed Dyson Costs Resetting
-- Fixed Exploring Wonder Showing '!' on Resources Tab
-- Fixed Importing Without Data Wiping Saves
-- Fixed Highlighting Bugs
-- Fixed Charcoal Burners Not Using Wood
-- Fixed Oxidisation UI Bug
-- Fixed Session Time Not Resetting
-- Fixed Meteorite Filling Storage Bug
-- Fixed Typos
+- 固定石油掘削装置コスト
+
+- 固定ヘリウムT4レッドコスト
+
+- 固定ダイソンセクションリセットコスト
+
+- サイボーグUIバグを修正
+
+- 固定ダイソンコストのリセット
+
+- 修正された探索の不思議表示 '!'リソースタブで
+
+- データの保存を消去せずにインポートを修正
+
+- 強調表示のバグを修正
+
+- 木材を使用しない固定チャコールバーナー
+
+- 酸化UIバグの修正
+
+- リセットされていない固定セッション時間
+
+- 隕石充填貯蔵バグの修正
+
+- 誤字脱字を修正
 
 ### v0.4.3
 
 - 達成された成果
 
 - 達成システムの変更
+- 
 - 100,000倍の変換オプション
 
 ##### バグ修正
-- Fixed Destruction of Machines Research Red Cost Bug
-- Fixed Meteorite Wonder Cost Bug
-- Fixed Titanium T4 Energy Costs
-- Fixed Dyson Costs Jumping to 3rd from 1st
-- Fixed Metal Icon not being transparent
 
-v0.4.2
-- Option for bold text on red costs
-- Nerfed Battery Costs
+- 機械研究レッドコストバグの固定破壊
 
-v0.4.1
-- Bug Fix with Sphere to Swarm Conversion
+- 隕石ワンダーコストバグの修正
 
-v0.4.0 The Hot and Cold Update
-- Achievements
-- Research from Sol Center
-- Meteorite
-- Meteorite Tier of resource machines (4th Tier)
-- Dyson Sections
-- Dyson Swarm
-- Dyson Sphere
-- Per Second Display on Science
-- Ability to Destroy Machines
-- Increased Width of Resources List to reduce vertical scrolling
-- Tiered Laboratories
-- Batteries
-- Changed Silicon from an inner planet resource to an earth resource
-- Altered Cyborg Theme
-- Stats for Time Keeping
-- Merged "More" and "Settings" Tabs
-- Tier 2 for Plasma and Meteorite
+- 固定チタンT4エネルギーコスト
 
-v0.3.5
-- Number Formatting for large numbers
-- Made Selected Tab Blue
+- ダイソンのコストを1位から3位に跳ね上がった
 
-v0.3.4
-- New Solar Theme
-- New United Theme
+- 固定された金属アイコンが透明ではない
 
-v0.3.3
-- Collapsibility for the Solar System Tab
-- Notifications on tabs when there is something new in them
+# v0.4.2
+- 赤いコストの太字のオプション
 
-v0.3.2
-- Made per second text red when negative
-- Dark Cyborg Theme
+- ナーフェドバッテリーのコスト
 
-v0.3.1
-- Rebalanced Fusion Reactor and Magmatic Dynamo
-- Rebalanced Tier 3 Machines For Some Resources
+# v0.4.1
+- SphereからSwarmへの変換によるバグ修正
 
-v0.3.0 The Tech Update [Pushed to Beta]
-- Sol Scientific Center
-- Computerized Tier of resource machines
-- Exploration of the outer planets
-- Energy-Mass Conversion
-- Hydrogen and Helium
-- Ice
-- Plasma
-- Tech Wonder
-- Fusion Reactor
-- More Statistics
-- Loading Screen
-- Fixed Typos
-- Fixed Wood/Charcoal Bugs
+# v0.4.0 ホットとコールドのアップデート
+- 成果
 
-v0.2.2
-- If you do not have enough resources for something, the number will be red
-- You can collapse resources into earth and space categories
-- Buffed Charcoal Engines and Solar Panels to stop people falling into a 'negative energy hole'
-- Nuclear & Magmatic Power
-- Nerfed Methane Station
+- ソルセンターからの研究
 
-v0.2.1
-- Fixed Bugs
+- 隕石
 
-v0.2.0 The Wondrous Update [Released To The Public]
-- Wonder Tab
-- two different wonders - Precious Wonder & Energetic Wonder
-- ability to upgrade Wonders
-- Uranium & Lava
-- Widened resources navigation so that storage could be displayed on one line
-- Solar Panel and Charcoal Engine Upgrades
-- Statistics
-- Settings
-- Import and Export
+- リソースマシンの隕石層（第4層）
 
-v0.1.2
-- Auto-saving
-- Finished Beginner's Guide
+- ダイソンセクション
 
-v0.1.1
-- Fixed bugs from the 0.1.0 update
+- ダイソン・スワーム
 
-v0.1.0 The Space Update
-- Space travel to The Moon, Venus, Mars and the Asteroid Belt
-- New resources: Lunarite, Methane Gas, Titanium, Silver, Gold and Silicon
-- Methane-based power
-- Commas to all numbers more than 1000
-- Fixed negative energy
-- Saving
-- Donations through paypal
-- Updated Beginner's Guide
+- ダイソンスフィア
 
-v0.0.7
-- Resource Technology Upgrade to double resource machines output
-- Nerfed Science
-- Changed the per second display to be zero if the storage is full
+- 科学の1秒あたりの表示
 
-v0.0.6
-- Icons for the rest of the resources
-- Help / FAQ Tab
-- Beginner Guide, FAQ and Credits
-- Made resource numbers scroll up instead of jumping to the current value
+- 機械を破壊する能力
 
-v0.0.5
-- Space Tab
-- Chemical plants that produce rocket fuel
-- Rocket that uses rocket fuel to launch into space
+- 垂直スクロールを減らすために、リソースリストの幅を拡大しました。
 
-v0.0.4 
-- Balanced Game More (to not take 2 minutes to complete)
-- Fixed Wood/sec bug
-- Made all resource gatherers increase in cost as you buy them
-- Fixed Resource Machines not using energy
-- Changed storage upgrades to cost metal as well
+- 段階的な研究所
 
-v0.0.3
-- Removed cap on energy
-- Solar Panels
-- Resource Gathering Machine were added that use a constant supply of energy
-- Oil was made a component in building machines
-- Fixed storage costs bug
+- バッテリー
 
-v0.0.2
-- Merged Crafting and Resources tabs
-- Reworked Science Techs
-- Balanced Science Tab
-- Removed the ability for science to be clicked - it can only be gained slowly
-- Energy and Charcoal engines
-- Charcoal
-- Removed Gas
+- シリコンを内惑星資源から地球資源に変えた
 
-v0.0.1
-- Basic mechanics and basic Bootstrap theme implemented
-- Initial release
+- サイボーグのテーマを変更しました
+
+- タイムキーピングの統計
+
+- 「その他」タブと「設定」タブをマージ
+
+- プラズマと隕石のティア2
+
+# v0.3.5
+- 大きな数字の数字の書式設定
+
+- 選択されたタブを青くする
+
+# v0.3.4
+- 新しいソーラーテーマ
+
+- 新しいユナイテッドテーマ
+
+# v0.3.3
+- 太陽系タブの折りたたみ性
+
+- タブに何か新しいものがある場合の通知
+
+# v0.3.2
+- ネガティブの場合、毎秒のテキストが赤になります。
+
+- ダークサイボーグのテーマ
+
+# v0.3.1
+- リバランスされた核融合炉とマグマティックダイナモ
+
+- いくつかのリソースのためにリバランスされたティア3マシン
+# v0.3.0 技術アップデート[ベータ版にプッシュ]
+- ソル科学センター
+
+- リソースマシンのコンピュータ化された階層
+
+- 外惑星の探査
+
+- エネルギー質量変換
+
+- 水素とヘリウム
+
+- 氷
+
+- プラズマ
+
+- テックワンダー
+
+- フュージョンリアクター
+
+- より多くの統計
+
+- 読み込み画面
+
+- 誤字脱字を修正
+
+- 固定された木材/木炭のバグ
+
+# v0.2.2
+- 何かに十分なリソースがない場合、番号は赤になります
+
+- 資源を地球と宇宙のカテゴリーに折りたたむことができます
+
+- 人々が「負のエネルギーの穴」に陥るのを防ぐためのバフチャコールエンジンとソーラーパネル
+
+- 原子力とマグマティックパワー
+
+- ナーフェドメタンステーション
+
+# v0.2.1
+- 修正されたバグ
+
+# v0.2.0 素晴らしいアップデート [一般に公開]
+- ワンダータブ
+
+- 二つの異なる不思議 - 貴重な不思議とエネルギッシュな不思議
+
+- ワンダーをアップグレードする能力
+
+- ウランと溶岩
+
+- ストレージを1行に表示できるように、リソースナビゲーションを拡張しました。
+
+- ソーラーパネルとチャコールエンジンのアップグレード
+
+- 統計
+
+- 設定
+
+- インポートとエクスポート
+
+# v0.1.2
+- 自動保存
+
+- 完成した初心者ガイド
+
+# v0.1.1
+- 0.1.0アップデートのバグを修正しました
+
+# v0.1.0 The Space Update
+- 月、金星、火星、小惑星帯への宇宙旅行
+
+- 新しい資源：ルナライト、メタンガス、チタン、銀、金、シリコン
+
+- メタンベースのパワー
+
+- 1000を超えるすべての数字へのコンマ
+
+- 固定された負のエネルギー
+
+- 節約
+
+- ペイパルによる寄付
+
+- 更新された初心者向けガイド
+
+# v0.0.7
+- リソースマシンの出力を2倍にするためのリソーステクノロジーのアップグレード
+
+- 神経質な科学
+
+- ストレージがいっぱいの場合、1秒あたりの表示をゼロに変更しました。
+
+# v0.0.6
+- 残りのリソースのアイコン
+
+- ヘルプ/FAQタブ
+
+- 初心者向けガイド、よくある質問、クレジット
+
+- リソース番号を現在の値にジャンプするのではなく、上にスクロールしました。
+
+# v0.0.5
+- スペースタブ
+
+- ロケット燃料を生産する化学工場
+
+- ロケット燃料を使って宇宙に打ち上げるロケット
+
+# v0.0.4 
+- バランスの取れたゲームもっと（完了するのに2分もかからないように）
+
+- ウッド/秒のバグを修正しました
+
+- すべてのリソースコレーターは、購入時にコストを増加させます。
+
+- エネルギーを使用しない固定リソースマシン
+
+- コストメタルにもストレージのアップグレードを変更しました
+
+# v0.0.3
+- エネルギーのキャップを外した
+
+- ソーラーパネル
+
+- 一定のエネルギー供給を使用するリソース収集機が追加されました
+
+- 石油は建設機械の構成要素とされた
+
+- ストレージコストのバグを修正
+
+# v0.0.2
+- マージされたクラフトとリソースのタブ
+
+- 再加工された科学技術
+
+- バランスの取れた科学タブ
+
+- 科学がクリックされる機能を削除しました - それはゆっくりとしか得られません
+
+- エネルギーと木炭エンジン
+
+- 木炭
+
+- 除去されたガス
+# v0.0.1
+- 基本的なメカニズムと基本的なブートストラップテーマが実装されています
+
+- 初期リリース
