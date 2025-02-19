@@ -16,7 +16,7 @@ var Game = (function() {
         Game.update(time - Game.lastUpdateTime);
         Game.lastUpdateTime = time;
 
-        // This ensures that we wait for the browser to "catch up" to drawing and other events
+        // これにより、ブラウザが描画やその他のイベントに「追いつく」のを待つことができます。
         window.requestAnimationFrame(Game.update_frame);
     };
 
@@ -70,7 +70,7 @@ var Game = (function() {
         self.updateAutoSave(delta);
 
         if(delta > 1) {
-            console.log("You have been away for " + Game.utils.getTimeDisplay(delta));
+            console.log("あなたはずっと離れていました " + Game.utils.getTimeDisplay(delta));
         }
     };
 
@@ -94,27 +94,27 @@ var Game = (function() {
     };
 
     instance.updateTime = function(delta) {
-        Game.statistics.add('sessionTime', delta);
-        Game.statistics.add('timePlayed', delta);
+        Game.statistics.add('セッションタイム', delta);
+        Game.statistics.add('タイムプレイ', delta);
     };
 
     instance.import = function() {
         var text = $('#impexpField').val();
-        if (!text.trim()) return console.warn("No save to import provided.");
+        if (!text.trim()) return console.warn("インポートするための保存は提供されていません。");
         if(text.length % 4 !== 0) {
-            console.log("String is not valid base64 encoded: " + text.length + ' (' + text.length % 4 + ')');
+            console.log("文字列は無効です base64 エンコード: " + text.length + ' (' + text.length % 4 + ')');
             return;
         }
 
         var decompressed = LZString.decompressFromBase64(text);
         if(!decompressed) {
-            console.log("Import Game failed, could not decompress!");
+            console.log("インポートゲームに失敗しました、解凍できませんでした！");
             return;
         }
 
         localStorage.setItem("save", decompressed);
 
-        console.log("Imported Saved Game");
+        console.log("インポートされたセーブゲーム");
 
         window.location.reload();
     };
@@ -125,8 +125,8 @@ var Game = (function() {
         var string = JSON.stringify(data);
         var compressed = LZString.compressToBase64(string);
 
-        console.log('Compressing Save');
-        console.log('Compressed from ' + string.length + ' to ' + compressed.length + ' characters');
+        console.log('圧縮保存');
+        console.log('から圧縮された ' + string.length + ' と ' + compressed.length + ' キャラクター');
         $('#impexpField').val(compressed);
     };
 
@@ -148,8 +148,8 @@ var Game = (function() {
         data = legacySave(data);
 
         localStorage.setItem("save",JSON.stringify(data));
-        Game.notifyInfo('Game Saved', 'Your save data has been stored in localStorage on your computer');
-        console.log('Game Saved');
+        Game.notifyInfo('ゲームが保存されました', '保存データは、コンピューターのローカルストアに保存されています。');
+        console.log('ゲームが保存されました');
 
         return data;
     };
@@ -176,7 +176,7 @@ var Game = (function() {
             }
         }
 
-        console.log("Load Successful");
+        console.log("ロード成功");
     };
 
     instance.updateUI = function(self){
@@ -213,16 +213,16 @@ var Game = (function() {
     };
 
     instance.deleteSave = function() {
-        var deleteSave = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box.");
+        var deleteSave = prompt("このセーブを削除してもよろしいですか？それは不可逆的です！その場合は、ボックスに「DELETE」と入力します。");
 
         if(deleteSave === "DELETE") {
-            localStorage.removeItem("save");
+            localStorage.removeItem("保存する");
 
-            alert("Deleted Save");
+            alert("削除された保存");
             window.location.reload();
         }
         else {
-            alert("Deletion Cancelled");
+            alert("削除がキャンセルされました");
         }
     };
 
@@ -234,7 +234,7 @@ var Game = (function() {
         registerLegacyBindings();
         self.ui.updateAutoDataBindings();
 
-        // Initialize first
+        // 最初に初期化する
         self.achievements.initialise();
         self.statistics.initialise();
         self.resources.initialise();
@@ -243,7 +243,7 @@ var Game = (function() {
         self.interstellar.initialise();
         self.stargaze.initialise();
 
-        // Now load
+        // 新しいロードする
         self.load();
 
         self.settings.initialise();
@@ -254,19 +254,19 @@ var Game = (function() {
 
         self.updateUI(self);
 
-        // Display what has changed since last time
+        // 前回から何が変わったかを表示する
         self.updates.initialise();
 
-        // Then start the main loops
+        // その後、メインループを開始します。
         self.createInterval("Fast Update", self.fastUpdate, 100);
         self.createInterval("Slow Update", self.slowUpdate, 1000);
         self.createInterval("UI Update", self.uiUpdate, 100);
 
-        // Do this in a setInterval so it gets called even when the window is inactive
+        // ウィンドウが非アクティブであっても呼び出されるように、setIntervalでこれを行います。
         window.setInterval(function(){ Game.fixedUpdate(); },100);
 
         setTimeout(function(){document.getElementById("loadScreen").className = "hidden";}, 100)
-        console.debug("Load Complete");
+        console.debug("ロード完了");
 
     };
 
@@ -289,7 +289,7 @@ var Game = (function() {
     instance.noticeStack = {"dir1": "up", "dir2": "left", "firstpos1": 25, "firstpos2": 25};
 
     instance.notifyInfo = function(title, message) {
-        if(title == "Game Saved" && Game.settings.entries.saveNotifsEnabled == false){
+        if(title == "ゲームが保存されました" && Game.settings.entries.saveNotifsEnabled == false){
             return;
         }
         if(Game.settings.entries.notificationsEnabled === true){
@@ -322,8 +322,8 @@ var Game = (function() {
     instance.notifyStorage = function() {
         if(Game.settings.entries.notificationsEnabled === true){
             this.activeNotifications.storage = new PNotify({
-                title: "Storage Full!",
-                text: 'You will no longer collect resources when they are full.',
+                title: "ストレージがいっぱい！",
+                text: 'リソースがいっぱいになると、リソースを収集できなくなります。',
                 type: 'warning',
                 animation: 'fade',
                 animate_speed: 'fast',
@@ -340,8 +340,8 @@ var Game = (function() {
 
     instance.notifyOffline = function(time) {
         this.activeNotifications.success = new PNotify({
-            title: "Offline Gains",
-            text: "You've been offline for " + Game.utils.getFullTimeDisplay(time, true),
+            title: "オフライン利益",
+            text: "あなたはオフラインでした " + Game.utils.getFullTimeDisplay(time, true),
             type: 'info',
             animation: 'fade',
             animate_speed: 'fast',
@@ -375,10 +375,10 @@ var Game = (function() {
         if (timeLeft <= 15000) {
             element.show();
             if(timeLeft <= 5000){
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(1) + " seconds");
+                element.text("自動保存" + (timeLeft / 1000).toFixed(1) + " 秒");
             }
             else{
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(0) + " seconds");
+                element.text("自動保存" + (timeLeft / 1000).toFixed(0) + " 秒");
             }
         } else {
             element.hide();
@@ -396,10 +396,10 @@ var Game = (function() {
 
         $('[data-toggle="tooltip"]').tooltip();
 
-        console.debug("Loading Game");
+        console.debug("ゲームの読み込み");
         
-        this.createInterval("Loading Animation", this.loadAnimation, 10);
-        this.createInterval("Loading", this.loadDelay, 1000);
+        this.createInterval("アニメーションの読み込み", this.loadAnimation, 10);
+        this.createInterval("ローディング", this.loadDelay, 1000);
 
         this.update_frame(0);
     };
