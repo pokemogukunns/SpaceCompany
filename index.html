@@ -2500,29 +2500,29 @@ if ("serviceWorker" in navigator) {
 							<tr id="lavaStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Lava storage size to <span id="lavaNextStorage">100</span>.
+										溶岩のストレージサイズをアップグレードする<span id="lavaNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="lavaLimitType">full</span> storage: <b><span id="lavaLimitTime">N/A</span></b>
+										<span id="lavaLimitType">満タン</span>までの時間storage: <b><span id="lavaLimitTime">N/A</span></b>
 										<br>
 										Costs <span id="lavaStorageCost">50</span> Lava, <span id="lavaStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeLavaStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeLavaStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Heat Resistant Crucible: <span id="crucible">0</span>
+										耐熱るつぼ: <span id="crucible">0</span>
 									</h3>
 									<span>
-										You can use a modified crucible to pick up lava and to store it for later use.
+										改造されたるつぼを使用して溶岩を拾い、後で使用するために保管することができます。
 										<br>
-										Produces 1 Lava per second.
+										毎秒1つの溶岩を生成します。
 										<br>
 										Costs <span id="crucibleGemCost">7,000</span> Gems, <span id="crucibleLunariteCost">4,000</span> Lunarite.
 									</span>
@@ -2538,11 +2538,11 @@ if ("serviceWorker" in navigator) {
 										Lava Extractor: <span id="extractor">0</span>
 									</h3>
 									<span>
-										This extracts lava from volcanoes automatically and quickly.
+										これにより、火山から溶岩が自動的かつ迅速に抽出されます。
 										<br>
-										Produces 7 Lava per second.
+										毎秒7つの溶岩を生成します。
 										<br>
-										Uses 58 Energy per second.
+										毎秒58エネルギーを使用します。
 										<br>
 										Costs <span id="extractorLunariteCost">16,000</span> Lunarite, <span id="extractorTitaniumCost">14,000</span> Titanium, <span id="extractorSiliconCost">6,000</span> Silicon.
 									</span>
@@ -2558,11 +2558,11 @@ if ("serviceWorker" in navigator) {
 										Igneous Extruder: <span id="extruder">0</span>
 									</h3>
 									<span>
-										Instead of going out and finding lava, it can be more convenient to make it yourself with heat and pressure.
+										外に出て溶岩を探す代わりに、熱と圧力で自分で作る方が便利です。
 										<br>
-										Produces 43 Lava per second.
+										毎秒43の溶岩を生成します。
 										<br>
-										Uses 237 Energy per second.
+										毎秒237エネルギーを使用します。
 										<br>
 										Costs <span id="extruderLunariteCost">69,000</span> Lunarite, <span id="extruderTitaniumCost">57,000</span> Titanium, <span id="extruderSiliconCost">39,000</span> Silicon.
 									</span>
@@ -2578,11 +2578,11 @@ if ("serviceWorker" in navigator) {
 										Volcanic Veluptuator: <span id="veluptuator">0</span>
 									</h3>
 									<span>
-										A melting pot of misery, pouring lava out from mined rock.
+										採掘された岩から溶岩を注ぐ悲惨なるつぼ。
 										<br>
-										Produces 187 Lava per second.
+										毎秒187の溶岩を生成します。
 										<br>
-										Uses 689 Energy per second.
+										毎秒689エネルギーを使用します。
 										<br>
 										Costs <span id="veluptuatorLunariteCost">298,000</span> Lunarite, <span id="veluptuatorGoldCost">121,000</span> Gold, <span id="veluptuatorMeteoriteCost">750</span> Meteorite.
 									</span>
@@ -2621,15 +2621,15 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Hydrogen
+										水素
 									</h2>
 									<span>
-										Hydrogen is extremely common on gas giants such as Jupiter and Saturn.
+										水素は、木星や土星などのガス惑星で非常に一般的です。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('hydrogen')" class="btn btn-default">Gain <span id="hydrogenGain">1</span></div>
+									<div onclick="gainResource('hydrogen')" class="btn btn-default">獲得する <span id="hydrogenGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2638,29 +2638,29 @@ if ("serviceWorker" in navigator) {
 							<tr id="hydrogenStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Hydrogen storage size to <span id="hydrogenNextStorage">100</span>.
+										水素貯蔵サイズをアップグレードする<span id="hydrogenNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="hydrogenLimitType">full</span> storage: <b><span id="hydrogenLimitTime">N/A</span></b>
+										<span id="hydrogenLimitType">満タン</span>までの時間 storage: <b><span id="hydrogenLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="hydrogenStorageCost">50</span> Hydrogen, <span id="hydrogenStorageLunariteCost">20</span> Lunarite.
+										Costs <span id="hydrogenStorageCost">50</span> 水素, <span id="hydrogenStorageLunariteCost">20</span> ルナライト.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeHydrogenStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeHydrogenStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Hydrogen Collector: <span id="collector">0</span>
+										水素コレクター: <span id="collector">0</span>
 									</h3>
 									<span>
-										This collector travels around Jupiter seeking Hydrogen to store to bring back to Earth.
+										このコレクターは、地球に持ち帰るために水素を求めて木星中を旅します。
 										<br>
-										Produces 1 Hydrogen per second.
+										毎秒1水素を生成します。
 										<br>
 										Costs <span id="collectorLunariteCost">6,000</span> Lunarite, <span id="collectorTitaniumCost">4,800</span> Titanium.
 									</span>
@@ -2676,7 +2676,7 @@ if ("serviceWorker" in navigator) {
 										Gaseous Magnet: <span id="magnet">0</span>
 									</h3>
 									<span>
-										The magnet attracts the Hydrogen to it to increase the amount collected per second.
+										磁石は水素を引き寄せ、毎秒の収集量を増やします。
 										<br>
 										Produces 5 Hydrogen per second.
 										<br>
