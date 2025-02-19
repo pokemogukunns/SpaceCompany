@@ -2678,76 +2678,76 @@ if ("serviceWorker" in navigator) {
 									<span>
 										磁石は水素を引き寄せ、毎秒の収集量を増やします。
 										<br>
-										Produces 5 Hydrogen per second.
+										毎秒5水素を生成します。
 										<br>
-										Uses 63 Energy per second.
+										毎秒63エネルギーを使用します。
 										<br>
 										Costs <span id="magnetLunariteCost">10,800</span> Lunarite, <span id="magnetTitaniumCost">9,600</span> Titanium, <span id="magnetGoldCost">6,600</span> Gold.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagnet()" class="btn btn-default">Get Magnet</button>
-									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">Destroy Gaseous Magnet</button>
+									<button onclick="getMagnet()" class="btn btn-default">マグネットを入手する</button>
+									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">気体磁石を破壊する</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Electrolytic Cell: <span id="eCell">0</span>
+										電解セル: <span id="eCell">0</span>
 									</h3>
 									<span>
-										These are made here on Earth and can turn water into hydrogen with a constant supply of Energy.
+										これらはここ地球上で作られており、一定のエネルギー供給で水を水素に変えることができます。
 										<br>
-										Produces 28 Hydrogen per second.
+										毎秒28個の水素を生成します。
 										<br>
-										Uses 234 Energy per second.
+										毎秒234エネルギーを使用します。
 										<br>
 										Costs <span id="eCellSilverCost">37,200</span> Silver, <span id="eCellGoldCost">34,200</span> Gold, <span id="eCellSiliconCost">25,800</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getECell()" class="btn btn-default">Get Electrolytic Cell</button>
-									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">Destroy Electrolytic Cell</button>
+									<button onclick="getECell()" class="btn btn-default">電解細胞を入手する</button>
+									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">電解細胞を破壊する</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Hindenburg Excavation: <span id="hindenburg">0</span>
+										ヒンデンブルク発掘: <span id="hindenburg">0</span>
 									</h3>
 									<span>
-										Somehow, it works.
+										どういうわけか、それは機能します。
 										<br>
-										Produces 113 Hydrogen per second.
+										毎秒113水素を生成します。
 										<br>
-										Uses 613 Energy per second.
+										毎秒613エネルギーを使用します。
 										<br>
 										Costs <span id="hindenburgLunariteCost">172,000</span> Lunarite, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> Meteorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHindenburg()" class="btn btn-default">Get Hindenburg Excavation</button>
-									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">Destroy Hindenburg Excavation</button>
+									<button onclick="getHindenburg()" class="btn btn-default">ヒンデンブルクの発掘調査を受け取る</button>
+									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">ヒンデンブルクの発掘を破壊する</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Star Harvester: <span id="harvester">0</span>
+										スターハーベスター: <span id="harvester">0</span>
 									</h3>
 									<span>
-										'Stealing' is such a strong word. I prefer 'borrowing without return' when we harvest the outer regions of stars.
+										「盗む」はとても強い言葉です。星の外側の領域を収穫するとき、私は「返さずに借りる」ことを好みます。
 										<br>
-										Produces 3562 Hydrogen per second.
+										毎秒3562個の水素を生成します。
 										<br>
-										Uses 3562 Energy per second.
+										毎秒3562エネルギーを使用します。
 										<br>
 										Costs <span id='harvesterLunariteCost'>250000</span> Lunarite, <span id='harvesterWoodCost'>184000</span> Wood, <span id='harvesterOilCost'>146000</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHarvester()" class="btn btn-default">Get Star Harvester</button>
-									<button onclick="destroyMachine('harvester')" class="btn btn-default destroy hidden">Destroy Star Harvester</button>
+									<button onclick="getHarvester()" class="btn btn-default">スターハーベスターを入手</button>
+									<button onclick="destroyMachine('harvester')" class="btn btn-default destroy hidden">スターハーベスターを破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -2759,10 +2759,10 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Helium
+										ヘリウム
 									</h2>
 									<span>
-										Helium is the second most common element on gas giants such as Jupiter and Saturn.
+										ヘリウムは、木星や土星などのガス惑星で2番目に一般的な元素です。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -2776,12 +2776,12 @@ if ("serviceWorker" in navigator) {
 							<tr id="heliumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Helium storage size to <span id="heliumNextStorage">100</span>.
+										ヘリウムストレージサイズをアップグレードする<span id="heliumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="heliumLimitType">full</span> storage: <b><span id="heliumLimitTime">N/A</span></b>
+										<span id="heliumLimitType">満タン</span>までの残り時間 storage: <b><span id="heliumLimitTime">N/A</span></b>
 										<br>
 										Costs <span id="heliumStorageCost">50</span> Helium, <span id="heliumStorageLunariteCost">20</span> Lunarite.
 									</span>
@@ -2796,16 +2796,16 @@ if ("serviceWorker" in navigator) {
 										Helium Drone: <span id="drone">0</span>
 									</h3>
 									<span>
-										The Helium Drone scouts out the area on Saturn and picks out spots high in Helium which are then mined slowly by it.
+										ヘリウムドローンは、土星の地域を偵察し、ヘリウムの高い場所を選び出し、ゆっくりと採掘します。
 										<br>
-										Produces 1 Helium per second.
+										毎秒1ヘリウムを生成します。
 										<br>
 										Costs <span id="droneLunariteCost">8,400</span> Lunarite, <span id="droneSiliconCost">6,000</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDrone()" class="btn btn-default">Get Drone</button>
-									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">Destroy Helium Drone</button>
+									<button onclick="getDrone()" class="btn btn-default">ドローンを入手する</button>
+									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">ヘリウムドローンを破壊する</button>
 								</td>
 							</tr>
 							<tr>
@@ -2814,18 +2814,18 @@ if ("serviceWorker" in navigator) {
 										Helium Tanker: <span id="tanker">0</span>
 									</h3>
 									<span>
-										This huge tanker holds large amounts of Helium and transports it from Saturn to Earth through the vacuum of space.
+										この巨大なタンカーは大量のヘリウムを貯蔵し、宇宙の真空を通って土星から地球に輸送します。
 										<br>
-										Produces 11 Helium per second.
+										毎秒11ヘリウムを生成します。
 										<br>
-										Uses 72 Energy per second.
+										毎秒72エネルギーを使用します。
 										<br>
 										Costs <span id="tankerLunariteCost">12,600</span> Lunarite, <span id="tankerTitaniumCost">10,200</span> Titanium, <span id="tankerSiliconCost">8,400</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getTanker()" class="btn btn-default">Get Tanker</button>
-									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">Destroy Helium Tanker</button>
+									<button onclick="getTanker()" class="btn btn-default">タンカーを手に入れる</button>
+									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">ヘリウムタンカーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="heliumTier3" class="hidden">
@@ -2834,58 +2834,58 @@ if ("serviceWorker" in navigator) {
 										Morphic Compressor: <span id="compressor">0</span>
 									</h3>
 									<span>
-										The Compressor packs helium densely into a small space so that it can be easily transported back to Earth.
+										コンプレッサーは、ヘリウムを小さなスペースに密集して詰め込み、簡単に地球に輸送できるようにします。
 										<br>
-										Produces 57 Helium per second.
+										毎秒57ヘリウムを生成します。
 										<br>
-										Uses 248 Energy per second.
+										毎秒248エネルギーを使用します。
 										<br>
 										Costs <span id="compressorLunariteCost">63,000</span> Lunarite, <span id="compressorTitaniumCost">43,800</span> Titanium, <span id="compressorSiliconCost">35,400</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCompressor()" class="btn btn-default">Get Morphic Compressor</button>
-									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">Destroy Morphic Compressor</button>
+									<button onclick="getCompressor()" class="btn btn-default">モーフィックコンプレッサーを入手する</button>
+									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">モーフィックコンプレッサーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="heliumTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Gas Giant Skimmer: <span id="skimmer">0</span>
+										ガスジャイアントスキマー: <span id="skimmer">0</span>
 									</h3>
 									<span>
-										Flying into Gas Giants' atmospheres with a big bucket is the best plan we've had yet!
+										大きなバケツを持ってガスジャイアンツの雰囲気に飛び込むことは、今までで最高の計画です！
 										<br>
-										Produces 232 Helium per second.
+										毎秒232ヘリウムを生成します。
 										<br>
-										Uses 670 Energy per second.
+										毎秒670エネルギーを使用します。
 										<br>
 										Costs <span id="skimmerLunariteCost">255,000</span> Lunarite, <span id="skimmerTitaniumCost">173,000</span> Titanium, <span id="skimmerMeteoriteCost">770</span> Meteorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSkimmer()" class="btn btn-default">Get Gas Giant Skimmer</button>
-									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">Destroy Gas Giant Skimmer</button>
+									<button onclick="getSkimmer()" class="btn btn-default">ガスジャイアントスキマーを入手</button>
+									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">ガス巨大スキマーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="heliumTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Caged Star: <span id="cage">0</span>
+										ケージドスター: <span id="cage">0</span>
 									</h3>
 									<span>
-										A contained miniature version of the sun uses nuclear fusion to create massive amounts of helium.
+										太陽のミニチュアバージョンは、核融合を使用して大量のヘリウムを生成します。
 										<br>
-										Produces 2369 Helium per second.
+										毎秒2369ヘリウムを生成します。
 										<br>
-										Uses 4075 Energy per second.
+										毎秒4075エネルギーを使用します。
 										<br>
 										Costs <span id='cageLunariteCost'>171000</span> Lunarite, <span id='cageSiliconCost'>165000</span> Silicon, <span id='cageMeteoriteCost'>18600</span> Meterorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCage()" class="btn btn-default">Get Caged Star</button>
-									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">Destroy Caged Star</button>
+									<button onclick="getCage()" class="btn btn-default">ケージスターをゲット</button>
+									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">檻の星を破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -2897,15 +2897,15 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Ice
+										氷
 									</h2>
 									<span>
-										Ice, although it can be collected on Earth, is not nearly as profitable as flying to Pluto and back with space craft full of the stuff. It is mainly used for super-cooling technology necessary for Tier 4 machines.
+										氷は地球上で収集できますが、冥王星に飛んで戻ってくるほど有益ではありません。主にTier 4マシンに必要な超冷却技術に使用されます。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('ice')" class="btn btn-default">Gain <span id="iceGain">1</span></div>
+									<div onclick="gainResource('ice')" class="btn btn-default">獲得する <span id="iceGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2914,29 +2914,29 @@ if ("serviceWorker" in navigator) {
 							<tr id="iceStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Ice storage size to <span id="iceNextStorage">100</span>.
+										氷の保管サイズをアップグレードする<span id="iceNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="iceLimitType">full</span> storage: <b><span id="iceLimitTime">N/A</span></b>
+										<span id="iceLimitType">満タン</span>までの残り時間storage: <b><span id="iceLimitTime">N/A</span></b>
 										<br>
 										Costs <span id="iceStorageCost">50</span> Ice, <span id="iceStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeIceStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeIceStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Ice Pickaxe: <span id="icePick">0</span>
+										アイスつるはし: <span id="icePick">0</span>
 									</h3>
 									<span>
-										The Ice Pickaxe is the simplest way of mining frozen water, and although it is the cheapest, it is the slowest.
+										アイスピクサは、凍った水を採掘する最も簡単な方法であり、最も安価ですが、最も遅いです。
 										<br>
-										Produces 1 Ice per second.
+										毎秒1個の氷を生成します。
 										<br>
 										Costs <span id="icePickLunariteCost">17,800</span> Lunarite, <span id="icePickGemCost">19,300</span> Gems.
 									</span>
@@ -2949,81 +2949,81 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Ice Drill: <span id="iceDrill">0</span>
+										アイスドリル: <span id="iceDrill">0</span>
 									</h3>
 									<span>
-										The Ice Drill is more effective than the Pickaxe and gains much more Ice every second. However, it does use electricity.
+										アイスドリルはつるはしよりも効果的で、毎秒より多くの氷を獲得します。しかし、それは電気を使います。
 										<br>
-										Produces 9 Ice per second.
+										毎秒9氷を生成します。
 										<br>
-										Uses 83 Energy per second.
+										毎秒83エネルギーを使用します。
 										<br>
 										Costs <span id="iceDrillLunariteCost">23,900</span> Lunarite, <span id="iceDrillTitaniumCost">21,200</span> Titanium, <span id="iceDrillSiliconCost">19,600</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getIceDrill()" class="btn btn-default">Get Ice Drill</button>
-									<button onclick="destroyMachine('iceDrill')" class="btn btn-default destroy hidden">Destroy Ice Drill</button>
+									<button onclick="getIceDrill()" class="btn btn-default">アイスドリルを入手する</button>
+									<button onclick="destroyMachine('iceDrill')" class="btn btn-default destroy hidden">アイスドリルを破壊する</button>
 								</td>
 							</tr>
 							<tr id="iceTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Ocean Freezer: <span id="freezer">0</span>
+										海洋冷凍庫: <span id="freezer">0</span>
 									</h3>
 									<span>
-										With advanced technology, you are now able to turn Earth's water into high-quality Ice, previously only found on Pluto.
+										高度な技術により、地球の水を、以前は冥王星にしか見られなかった高品質の氷に変えることができます。
 										<br>
-										Produces 65 Ice per second.
+										毎秒65個の氷を生成します。
 										<br>
-										Uses 397 Energy per second.
+										毎秒397エネルギーを使用します。
 										<br>
 										Costs <span id="freezerLunariteCost">117,000</span> Lunarite, <span id="freezerTitaniumCost">86,000</span> Titanium, <span id="freezerSiliconCost">73,000</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFreezer()" class="btn btn-default">Get Freezer</button>
-									<button onclick="destroyMachine('freezer')" class="btn btn-default destroy hidden">Destroy Ocean Freezer</button>
+									<button onclick="getFreezer()" class="btn btn-default">冷凍庫を手に入れる</button>
+									<button onclick="destroyMachine('freezer')" class="btn btn-default destroy hidden">海洋冷凍庫を破壊する</button>
 								</td>
 							</tr>
 							<tr id="iceTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Mr Freeze: <span id="mrFreeze">0</span>
+										フリーザー: <span id="mrFreeze">0</span>
 									</h3>
 									<span>
-										This robot is the coolest guy in the solar system.
+										このポケモンは太陽系で最もクールなポケモンです。
 										<br>
-										Produces 278 Ice per second.
+										冷凍ビームで毎秒278個の氷を生成します。
 										<br>
-										Uses 1,135 Energy per second.
+										毎秒1,135エネルギーを使用します。
 										<br>
 										Costs <span id="mrFreezeWoodCost">379,000</span> Wood, <span id="mrFreezeHeliumCost">14,000</span> Helium, <span id="mrFreezeMeteoriteCost">1,500</span> Meteorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMrFreeze()" class="btn btn-default">Get Mr Freeze</button>
-									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">Destroy Mr Freeze</button>
+									<button onclick="getMrFreeze()" class="btn btn-default">フリーザーを入手</button>
+									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">フリーザーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="iceTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Overexchange Condenser: <span id="overexchange">0</span>
+										オーバーエクスチェンジコンデンサー: <span id="overexchange">0</span>
 									</h3>
 									<span>
-										Drain heat out of the ingredients so fast that you're not sure how to process it safely, but you managed to do it properly anyway.
+										材料から熱を素早く排出するので、安全に処理する方法がわかりませんが、とにかく適切に処理できました。
 										<br>
-										Produces 2973 Ice per second.
+										毎秒2973個の氷を生成します。
 										<br>
-										Uses 7397 Energy per second.
+										毎秒7397エネルギーを使用します。
 										<br>
 										Costs <span id='overexchangeMetalCost'>210,000</span> Metal, <span id='overexchangeSilverCost'>188,000</span> Silver, <span id='overexchangeHeliumCost'>205,000</span> Helium.
 									</span>
 									<br>
 									<br>
-									<button onclick="getOverexchange()" class="btn btn-default">Get Overexchange Condenser</button>
-									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">Destroy Overexchange Condenser</button>
+									<button onclick="getOverexchange()" class="btn btn-default">オーバーエクスチェンジコンデンサーを入手する</button>
+									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">過剰交換コンデンサーを破壊する</button>
 								</td>
 							</tr>
 						</table>
@@ -3035,19 +3035,19 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Meteorite
+										隕石
 									</h2>
 									<span>
-										Creating Meteorite is only possible from purer forms of energy than those created with earth technology. Therefore, Plasma is necessary to make the strong resource.
+										隕石の作成は、地球技術で作成されたものよりも純粋なエネルギー形態からのみ可能です。したがって、プラズマは強力な資源を作るために必要です。
 										<br>
-										Converting to 1 Meteorite Costs 3 Plasma.
+										1隕石に変換するには3プラズマがかかります。
 									</span>
 									<br>
 									<br>
 									<hide class="gainButton">
-									<div onclick="gainResource('meteorite')" class="btn btn-default">Convert <span id="meteoriteGain">1</span></div>
+									<div onclick="gainResource('meteorite')" class="btn btn-default">変換 <span id="meteoriteGain">1</span></div>
 									</hide>
-									<button onclick="toggleMeteorite()" class="btn btn-default">Turn Meteorite Production <span id="meteoriteToggled">Off</span></button>
+									<button onclick="toggleMeteorite()" class="btn btn-default">隕石の生産を回す <span id="meteoriteToggled">オフ</span></button>
 									<br>
 									<br>
 								</td>
@@ -3055,83 +3055,83 @@ if ("serviceWorker" in navigator) {
 							<tr id="meteoriteStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										ストレージのアップグレード
 									</h3>
 									<span>
-										Upgrade your Meteorite storage size to <span id="meteoriteNextStorage">100</span>.
+										隕石のストレージサイズをアップグレードする<span id="meteoriteNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="meteoriteLimitType">full</span> storage: <b><span id="meteoriteLimitTime">N/A</span></b>
+										<span id="meteoriteLimitType">満タン</span>までの残り時間storage: <b><span id="meteoriteLimitTime">N/A</span></b>
 										<br>
 										Costs <span id="meteoriteStorageCost">50</span> Meteorite, <span id="meteoriteStorageLunariteCost">400</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMeteoriteStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeMeteoriteStorage()" class="btn btn-default">ストレージのアップグレード</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier1" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Meteorite Printer: <span id="printer">0</span>
+										隕石プリンター: <span id="printer">0</span>
 									</h3>
 									<span>
-										Construct an automated way of producing meteorite without you having to do anything.
+										何もしなくても、隕石を生成する自動化された方法を構築します。
 										<br>
-										Produces 1 Meteorite per second. Uses 3 Plasma per second.
+										毎秒1つの隕石を生成します。毎秒3つのプラズマを使用します。
 										<br>
 										Costs <span id="printerLunariteCost">100,000</span> Lunarite, <span id="printerSiliconCost">60,000</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPrinter()" class="btn btn-default">Get Meteorite Printer</button>
-									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">Destroy Meteorite Printer</button>
+									<button onclick="getPrinter()" class="btn btn-default">隕石プリンターを入手する</button>
+									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">隕石プリンターを破壊する</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Meteorite Web: <span id="web">0</span>
+										隕石ウェブ: <span id="web">0</span>
 									</h3>
 									<span>
-										The Meteorite Web uses nano-fibres made while submerged in highly radioactive liquids to become strong enough to physically catch meteors from the Asteroid Belt. Plasma is required to refine the asteroids into Meteorite Ore, which can be usable.
+										隕石ウェブは、高放射性液体に浸したときに作られたナノファイバーを使用して、小惑星帯から流星を物理的にキャッチするのに十分な強度になります。小惑星を隕石鉱石に精製するにはプラズマが必要ですが、これは使用できます。
 										<br>
-										Produces 8 Meteorite per second. Uses 21 Plasma per second.
+										毎秒8つの隕石を生成します。毎秒21プラズマを使用します。
 										<br>
 										Costs <span id="webLunariteCost">940,000</span> Lunarite, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getWeb()" class="btn btn-default">Get Meteorite Web</button>
-									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">Destroy Meteorite Web</button>
+									<button onclick="getWeb()" class="btn btn-default">隕石ウェブを入手する</button>
+									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">隕石ウェブを破壊する</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Planet Smasher: <span id="smasher">0</span>
+										プラネットスマッシャー: <span id="smasher">0</span>
 									</h3>
 									<span>
-										Get meteorites the old-fashioned way: demolishing uninhabited exoplanets by firing high-energy particle beams at them, then collect the debris.
+										古い方法で隕石を入手する：高エネルギー粒子ビームを発射して無人系外惑星を破壊し、破片を収集する。
 										<br>
-										Produces 72 Meteorite per second. Uses 111 Plasma per second.
+										毎秒72隕石を生成する。毎秒111プラズマを使用します。
 										<br>
 										Costs <span id="smasherSiliconCost">3.23M</span> Silicon, <span id="smasherSilverCost">5.89M</span> Silver, <span id="smasherGemCost">8.34M</span> Gems.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSmasher()" class="btn btn-default">Get Planet Smasher</button>
-									<button onclick="destroyMachine('smasher')" class="btn btn-default destroy hidden">Destroy Planet Smasher</button>
+									<button onclick="getSmasher()" class="btn btn-default">プラネットスマッシャーを入手</button>
+									<button onclick="destroyMachine('smasher')" class="btn btn-default destroy hidden">惑星スマッシャーを破壊する</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Nebulous Synthesizer: <span id="nebulous">0</span>
+										ネビュラスシンセサイザー: <span id="nebulous">0</span>
 									</h3>
 									<span>
-										Bypass the need for demolishing planets entirely by building your own nebula to create meteorites instead of planets.
+										惑星の代わりに隕石を作成するために独自の星雲を構築することで、惑星を完全に破壊する必要性を回避します。
 										<br>
-										Produces 135 Meteorite per second. Uses 142 Plasma per second.
+										毎秒135隕石を生成します。毎秒142プラズマを使用します。
 										<br>
 										Costs <span id="nebulousLunariteCost">25.8M</span> Lunarite, <span id="nebulousLavaCost">19.7M</span> Lava, <span id="nebulousGoldCost">21.9M</span> Gold.
 									</span>
@@ -3157,7 +3157,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Science Production
+								科学生産
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:center;">
@@ -3177,7 +3177,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Technologies
+								テクノロジー
 							</span>
 						</td>
 					</tr>
@@ -3190,10 +3190,10 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Science Production
+										科学生産
 									</h2>
 									<span>
-										Science is used for researching new technologies to further your progress in the game.
+										科学は、ゲームでの進歩を促進するために、新しいテクノロジーを研究するために使用されます。
 									</span>
 									<br>
 									<br>
@@ -3202,18 +3202,18 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Home Science Kit: <span id="lab">0</span>
+										ホームサイエンスキット: <span id="lab">0</span>
 									</h3>
 									<span>
-										Build a small laboratory of your very own to start producing science.
+										あなた自身の小さな実験室を建てて、科学の生産を始めましょう。
 										<br>
-										Each one produces 0.1 science per second.
+										それぞれが毎秒0.1の科学を生み出します。
 										<br>
-										Costs <span id="labMetalCost">20</span> Metal, <span id="labGemCost">15</span> Gems, <span id="labWoodCost">10</span> Wood.
+										コスト <span id="labMetalCost">20</span> 金属, <span id="labGemCost">15</span> 宝石、 <span id="labWoodCost">10</span> 木。
 									</span>
 									<br>
 									<br>
-									<button onclick="getLab()" class="btn btn-default">Build</button>
+									<button onclick="getLab()" class="btn btn-default">構築する</button>
 									<br>
 									<br>
 								</td>
@@ -3221,18 +3221,18 @@ if ("serviceWorker" in navigator) {
 							<tr id="labTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										High School Science: <span id="labT2">0</span>
+										高校科学: <span id="labT2">0</span>
 									</h3>
 									<span>
-										Build a more effective laboratory to continue your quest into the realm of science at a significantly faster speed.
+										より効果的な実験室を建設して、はるかに速いスピードで科学の領域への探求を続けてください。
 										<br>
-										Each one produces 1 science per second.
+										それぞれが1秒間に1つの科学を生み出します。
 										<br>
-										Costs <span id="labT2MetalCost">1,000</span> Metal, <span id="labT2GemCost">200</span> Gems, <span id="labT2WoodCost">500</span> Wood.
+										コスト <span id="labT2MetalCost">1,000</span> 金属、<span id="labT2GemCost">200</span> 宝石、<span id="labT2WoodCost">500</span> 木。
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT2()" class="btn btn-default">Build Laboratory T2</button>
+									<button onclick="getLabT2()" class="btn btn-default">実験室T2を構築する</button>
 									<br>
 									<br>
 								</td>
@@ -3240,52 +3240,52 @@ if ("serviceWorker" in navigator) {
 							<tr id="labTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										University Laboratory: <span id="labT3">0</span>
+										大学の研究室: <span id="labT3">0</span>
 									</h3>
 									<span>
-										Build an even better version of the old laboratory to further your exploration of the realm of science.
+										科学の領域の探求を促進するために、古い実験室のさらに良いバージョンを構築します。
 										<br>
-										Each one produces 10 science per second.
+										それぞれが毎秒10の科学を生み出します。
 										<br>
-										Costs <span id="labT3MetalCost">17,000</span> Metal, <span id="labT3GemCost">4,700</span> Gems, <span id="labT3WoodCost">9,600</span> Wood.
+										コスト <span id="labT3MetalCost">17,000</span> 金属, <span id="labT3GemCost">4,700</span> 宝石, <span id="labT3WoodCost">9,600</span> 木。
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT3()" class="btn btn-default">Build Laboratory T3</button>
+									<button onclick="getLabT3()" class="btn btn-default">ラボT3を構築する</button>
 								</td>
 							</tr>
 							<tr id="labTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Scientific Observatory: <span id="labT4">0</span>
+										科学観測所: <span id="labT4">0</span>
 									</h3>
 									<span>
-										Create an observatory to gaze upon the stars and acquire knowledge from them.
+										星を眺め、そこから知識を得るための天文台を作りましょう。
 										<br>
-										Each one produces 100 science per second.
+										それぞれが毎秒100の科学を生み出します。
 										<br>
-										Costs <span id="labT4MetalCost">610,000</span> Metal, <span id="labT4GemCost">370,000</span> Gems, <span id="labT4WoodCost">926,000</span> Wood.
+										コスト <span id="labT4MetalCost">610,000</span> 金属, <span id="labT4GemCost">370,000</span> 宝石, <span id="labT4WoodCost">926,000</span> 木.
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT4()" class="btn btn-default">Build Laboratory T4</button>
+									<button onclick="getLabT4()" class="btn btn-default">ラボT4を構築する</button>
 								</td>
 							</tr>
 							<tr id="labTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Space Scientific Satellite Station: <span id="labT5">0</span>
+										宇宙科学衛星ステーション: <span id="labT5">0</span>
 									</h3>
 									<span>
-										From outside Earth's orbit, the universe can be understood much more efficiently without an atmosphere obstructing the lab's view.
+										地球の軌道の外から見ると、大気が実験室の視界を妨げることなく、宇宙をより効率的に理解することができます。
 										<br>
-										Each one produces 1000 science per second.
+										それぞれが毎秒1000の科学を生み出します。
 										<br>
-										Costs <span id="labT5MetalCost">12.40M</span> Metal, <span id="labT5GemCost">7.30M</span> Gems, <span id="labT5WoodCost">15.90M</span> Wood.
+										コスト <span id="labT5MetalCost">12.40M</span> 金属, <span id="labT5GemCost">7.30M</span> 宝石, <span id="labT5WoodCost">15.90M</span> 木.
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT5()" class="btn btn-default">Build Laboratory T5</button>
+									<button onclick="getLabT5()" class="btn btn-default">ラボT5を構築する</button>
 								</td>
 							</tr>
 						</table>
@@ -3297,21 +3297,21 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border: none;">
 									<h2 class="default btn-link">
-										Technologies
+										テクノロジー
 									</h2>
 									<span>
-										Research new technologies to unlock more mechanics and advance through the game.
+										より多くのメカニズムを解き放ち、ゲームを進めるための新しいテクノロジーを研究します。
 									</span>
 								</td>
 							</tr>
-							<!-- HTML is dynamically generated to fill this table -->
+							<!-- このテーブルを埋めるためにHTMLが動的に生成されます -->
 						</table>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Solar System -->
+		<!-- ソーラーシステム -->
 		<div role="tabpanel" class="tab-pane fade" id="solarSystem">
 			<div class="container" style="width:250px; float:left;">
 				<table class="table table-hover text-primary no-select pointer">
@@ -3321,12 +3321,12 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Rocket Fuel
+								ロケット燃料
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="rocketFuelps">0</span>/Sec
+								<span id="rocketFuelps">0</span>/秒
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:right;">
@@ -3341,13 +3341,13 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Space Rocket
+								宇宙ロケット
 							</span>
 						</td>
 					</tr>
 					<tr id="collapseInner" class="collapseInner hidden" style="border:none;">
 						<td colspan="4">
-							<span>Collapse Inner Solar System</span> <span class="caret"></span>
+							<span>太陽系の崩壊</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr class="hidden" id="moon" onclick="activeSolarTab('moon')" href="#moonTab" aria-controls="moonTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -3356,7 +3356,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								The Moon
+								お月さま
 							</span>
 						</td>
 					</tr>
@@ -3366,7 +3366,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Mercury
+								水星
 							</span>
 						</td>
 					</tr>
@@ -3376,7 +3376,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Venus
+								金星
 							</span>
 						</td>
 					</tr>
@@ -3386,7 +3386,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Mars
+								火星
 							</span>
 						</td>
 					</tr>
@@ -3396,7 +3396,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Asteroid Belt
+								小惑星ベルト
 							</span>
 						</td>
 					</tr>
@@ -3406,13 +3406,13 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								The Wonder Station
+								ワンダーステーション
 							</span>
 						</td>
 					</tr>
 					<tr id="collapseOuter" class="collapseOuter hidden" style="border:none;">
 						<td colspan="4">
-							<span>Collapse Outer Solar System</span> <span class="caret"></span>
+							<span>外太陽系の崩壊</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr class="hidden" id="jupiter" onclick="activeSolarTab('jupiter')" href="#jupiterTab" aria-controls="jupiterTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -3421,7 +3421,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Jupiter
+								木星
 							</span>
 						</td>
 					</tr>
@@ -3431,7 +3431,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Saturn
+								土星
 							</span>
 						</td>
 					</tr>
@@ -3441,7 +3441,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Uranus
+								天王星
 							</span>
 						</td>
 					</tr>
@@ -3451,7 +3451,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Neptune
+								ネプチューン
 							</span>
 						</td>
 					</tr>
@@ -3461,7 +3461,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Pluto
+								冥王星
 							</span>
 						</td>
 					</tr>
@@ -3471,7 +3471,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Kuiper Belt
+								カイパーベルト
 							</span>
 						</td>
 					</tr>
@@ -3481,7 +3481,7 @@ if ("serviceWorker" in navigator) {
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Sol Scientific Center
+								ソル科学センター
 							</span>
 						</td>
 					</tr>
@@ -3494,14 +3494,14 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Rocket Fuel
+										ロケット燃料
 									</h2>
 									<span>
-										Rocket fuel is created in chemical plants and is used to allow rockets to launch off into space and to travel to other planets and star systems.
+										ロケット燃料は化学工場で作られ、ロケットが宇宙に打ち上げ、他の惑星や星系に移動できるようにするために使用されます。
 									</span>
 									<br>
 									<br>
-									<button onclick="toggleRocketFuel()" class="btn btn-default">Turn Rocket Fuel <span id="rocketFuelToggled">Off</span></button>
+									<button onclick="toggleRocketFuel()" class="btn btn-default">ロケット燃料を回す <span id="rocketFuelToggled">オフ</span></button>
 									<br>
 									<br>
 								</td>
@@ -3509,21 +3509,21 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Chemical Plant: <span id="chemicalPlant">0</span>
+										化学工場: <span id="chemicalPlant">0</span>
 									</h3>
 									<span>
-										Chemical plants are used to make rocket fuel automatically.
+										化学プラントは、ロケット燃料を自動的に製造するために使用されます。
 										<br>
-										They use 20 Oil and 20 Charcoal each second.
+										彼らは毎秒20個の油と20個の木炭を使います。
 										<br>
-										They produce 0.2 Rocket Fuel per second.
+										彼らは毎秒0.2ロケット燃料を生成します。
 										<br>
-										Costs <span id="chemicalPlantMetalCost">1,000</span> Metal, <span id="chemicalPlantGemCost">750</span> Gems, <span id="chemicalPlantOilCost">500</span> Oil.
+										コスト <span id="chemicalPlantMetalCost">1,000</span> 金属, <span id="chemicalPlantGemCost">750</span> 宝石, <span id="chemicalPlantOilCost">500</span> オイル。
 									</span>
 									<br>
 									<br>
-									<button onclick="getChemicalPlant()" class="btn btn-default">Build Chemical Plant</button>
-									<button onclick="destroyMachine('chemicalPlant')" class="btn btn-default destroy hidden">Destroy Chemical Plant</button>
+									<button onclick="getChemicalPlant()" class="btn btn-default">化学工場を建てる</button>
+									<button onclick="destroyMachine('chemicalPlant')" class="btn btn-default destroy hidden">化学プラントを破壊する</button>
 									<br>
 									<br>
 								</td>
@@ -3531,21 +3531,21 @@ if ("serviceWorker" in navigator) {
 							<tr id="rocketFuelT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Oxidisation Chamber: <span id="oxidisation">0</span>
+										酸化チャンバー: <span id="oxidisation">0</span>
 									</h3>
 									<span>
-										Oxidisation Chambers make rocket fuel faster and more efficiently than chemical plants.
+										酸化チャンバーは、化学プラントよりもロケット燃料をより速く、より効率的に製造します。
 										<br>
-										They use 100 Oil and 100 Charcoal each second.
+										彼らは毎秒100オイルと100チャコールを使用します。
 										<br>
-										They produce 1.5 Rocket Fuel per second.
+										彼らは毎秒1.5ロケット燃料を生成します。
 										<br>
-										Costs <span id="oxidisationMetalCost">12,000</span> Metal, <span id="oxidisationGemCost">8,300</span> Gems, <span id="oxidisationOilCost">6,800</span> Oil.
+										コスト <span id="oxidisationMetalCost">12,000</span> 金属, <span id="oxidisationGemCost">8,300</span> 宝石, <span id="oxidisationOilCost">6,800</span> オイル。
 									</span>
 									<br>
 									<br>
-									<button onclick="getOxidisation()" class="btn btn-default">Build Oxidisation Chamber</button>
-									<button onclick="destroyMachine('oxidisation')" class="btn btn-default destroy hidden">Destroy Oxidisation Chamber</button>
+									<button onclick="getOxidisation()" class="btn btn-default">酸化チャンバーを構築する</button>
+									<button onclick="destroyMachine('oxidisation')" class="btn btn-default destroy hidden">酸化チャンバーを破壊する</button>
 									<br>
 									<br>
 								</td>
@@ -3553,21 +3553,21 @@ if ("serviceWorker" in navigator) {
 							<tr id="rocketFuelT3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Hydrazine Catalyst: <span id="hydrazine">0</span>
+										ヒドラジン触媒: <span id="hydrazine">0</span>
 									</h3>
 									<span>
-										These speed up the chemical reactions needed to make rocket fuel by using greenhouse gases such as methane.
+										これらは、メタンなどの温室効果ガスを使用してロケット燃料を作るのに必要な化学反応を加速させます。
 										<br>
-										They use 520 Methane each second.
+										彼らは毎秒520メタンを使用します。
 										<br>
-										They produce 20 Rocket Fuel per second.
+										彼らは毎秒20個のロケット燃料を生成します。
 										<br>
-										Costs <span id="hydrazineTitaniumCost">140,000</span> Titanium, <span id="hydrazineSiliconCost">96,300</span> Silicon, <span id="hydrazineGoldCost">78,600</span> Gold.
+										コスト <span id="hydrazineTitaniumCost">140,000</span> チタン, <span id="hydrazineSiliconCost">96,300</span> シリコン, <span id="hydrazineGoldCost">78,600</span> 金.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHydrazine()" class="btn btn-default">Build Hydrazine Catalyst</button>
-									<button onclick="destroyMachine('hydrazine')" class="btn btn-default destroy hidden">Destroy Hydrazine Catalyst</button>
+									<button onclick="getHydrazine()" class="btn btn-default">ヒドラジン触媒を構築する</button>
+									<button onclick="destroyMachine('hydrazine')" class="btn btn-default destroy hidden">ヒドラジン触媒を破壊する</button>
 									<br>
 									<br>
 								</td>
@@ -3581,12 +3581,12 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Rocket
+										ロケット
 									</h2>
 									<span>
-										Building a rocket will allow for exploration around the solar system and will allow you to gather resources in space.
+										ロケットを構築することで、太陽系周辺の探査が可能になり、宇宙で資源を集めることができます。
 										<br>
-										<b>NB: You only need 1 Rocket. You can reuse the same one by just using fuel.</b>
+										<b>注：必要なのはロケット1個だけです。燃料を使用するだけで、同じものを再利用できます。</b>
 									</span>
 									<br>
 									<br>
@@ -3595,16 +3595,16 @@ if ("serviceWorker" in navigator) {
 							<tr id="solarRocket">
 								<td>
 									<h3 class="default btn-link">
-										Rocket: <span id="rocket">Not Built</span>
+										ロケット: <span id="rocket">構築されていない</span>
 									</h3>
 									<span>
-										To launch the rocket into space, it must first be built.
+										ロケットを宇宙に打ち上げるには、まずロケットを建造する必要があります。
 										<br>
-										Costs <span id="rocketMetalCost">1,200</span> Metal, <span id="rocketGemCost">900</span> Gems, <span id="rocketOilCost">1,000</span> Oil.
+										コスト <span id="rocketMetalCost">1,200</span> 金属, <span id="rocketGemCost">900</span> 宝石, <span id="rocketOilCost">1,000</span> オイル.
 									</span>
 									<br>
 									<br>
-									<button onclick="getRocket()" class="btn btn-default">Build Rocket</button>
+									<button onclick="getRocket()" class="btn btn-default">ロケットを作る</button>
 									<br>
 									<br>
 								</td>
@@ -3612,16 +3612,16 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Launch Rocket
+										ロケットの打ち上げ
 									</h3>
 									<span>
-										Launching the rocket into space will unlock space mining, exploration and other planets.
+										ロケットを宇宙に打ち上げると、宇宙採掘、探査、その他の惑星がアンロックされます。
 										<br>
-										This requires <span id="rocketRocketCost" class="red">1</span> rocket and <span id="rocketRocketFuelCost" class="red">20</span> rocket fuel.
+										これには必要です<span id="rocketRocketCost" class="red">1</span> ロケットと<span id="rocketRocketFuelCost" class="red">20</span> ロケット燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="launchRocket()" class="btn btn-default">Launch Rocket</button>
+									<button onclick="launchRocket()" class="btn btn-default">ロケットの打ち上げ</button>
 									<br>
 									<br>
 								</td>
@@ -3635,10 +3635,10 @@ if ("serviceWorker" in navigator) {
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Moon
+										お月さま
 									</h2>
 									<span>
-										The Moon is our largest satellite, revolving around the Earth once every 27 days. It contains a large quantity of Lunarite, left over from when it separated from the Earth billions of years ago. It is much stronger than regular metal and used to build more advanced machines.
+										月は私たちの最大の衛星で、27日に1回地球の周りを周回しています。数十億年前に地球から分離したときに残された大量のルナライトが含まれています。通常の金属よりもはるかに強く、より高度な機械の製造に使用されます。
 									</span>
 									<br>
 									<br>
