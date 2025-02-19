@@ -9,6 +9,15 @@ if ("serviceWorker" in navigator) {
     .catch((err) => console.log("Service Worker registration failed:", err));
 }
 </script>
+   <style>
+        body {
+            background-image: url('https://pokemogukunns.github.io/SpaceCompany/img/back-img.png');
+            background-size: cover; /* 背景画像を画面全体に拡大 */
+            background-position: center center; /* 画像の位置を中央に */
+            height: 100vh; /* 画面全体を占める */
+            margin: 0;
+        }
+    </style>
 <div id="loadScreen" style="width:100%; height:100%; background-color: black"><div style="width:100%; height:3%"></div><div style="width:70%; font-size:72px; font-family: 'Orbitron', 'sans-serif'; font-weight: lighter; color:#ffffff; line-height:72px; text-align:center; margin: auto;">Space Company<!-- </div><div style="margin-left:31%; "> --><br><img id="loadLogo" style="opacity: 1; width:50%; height:50%;" src="whiteLogo.png"><br></div><div id="splashText" style="width:100%; font-size:40px; font-family: 'Orbitron', 'sans-serif'; font-weight: bold; color:#ffffff; line-height:40px; text-align:center;">読み込み中...</div></div>
 <script type="text/javascript" src="data/splashTextData.js"></script>
 <div id="game" class="container hidden" style="width:95%; margin: auto;">
