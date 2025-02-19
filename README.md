@@ -1,132 +1,132 @@
-# Overview:
-Space Company is a science-fiction incremental game where you start from humble beginnings on Earth, working your way up to travelling between star systems and building Dyson Spheres and pretty much colonising the entire galaxy(ies?)
+# 概要:
+スペースカンパニーは、地球上のささやかな始まりから始めて、星系間を移動し、ダイソン球を構築し、銀河全体を植民地化するSFの増分ゲームです。
 
-Development has stopped, however, several projects have been created based on this you may wish to try.
+開発は停止しましたが、これに基づいていくつかのプロジェクトが作成されましたので、試してみてください。
 
-# Derived projects from members in the community
+# コミュニティのメンバーから派生したプロジェクト
 - https://play.google.com/store/apps/details?id=com.freddecgames.ngsc Mobile Port by Freddec
-- https://ngspacecompany.freddecgames.com/ V1 Web uptaken by Freddec
-- https://ngsc.freddecgames.com/ V2 Web Freddec
-- https://github.com/migue1s/SpaceCompanyNative Mobile Port by migue1s
-- https://github.com/SpiderGamin/SpaceCompany-Desktop Desktop Application by SpiderGamin
+- https://ngspacecompany.freddecgames.com/ フレッドデックによって取り上げられたV1ウェブ
+- https://ngsc.freddecgames.com/ V2ウェブフレッドデック
+- https://github.com/migue1s/SpaceCompanyNative Migue1sによるモバイルポート
+- https://github.com/SpiderGamin/SpaceCompany-Desktop SpiderGaminによるデスクトップアプリケーション
 - 
-# Former Plans for the Future
+# 将来の以前の計画
 - Check https://www.reddit.com/r/SpaceCompany/wiki/futureplans
-- When loading game, the tab you left on is the tab you now start on
-- Random Events
-- [Change UI from bootstrap to my own]
+- ゲームをロードするとき、あなたが残したタブは、あなたが今始めるタブです
+- ランダムイベント
+- [UIをブートストラップから自分のものに変更する]
 
 
-# RoadMap
+# ロードマップ
 
-v1.0 The Overlord Update
+V1.0 オーバーロード アップデート
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.6
 
-- Adding Lore onto every Building and an introduction to your Space Company
-- Rebalance all costs to not use as much Lunarite/Gems
-- Loading screen flavour text changes as you progress
-- Machine Overview Tab
+- すべての建物にロアを追加し、スペースカンパニーの紹介
+- ルナライト/ジェムをあまり使用しないように、すべてのコストのバランスを取り直します。
+- 読み込み画面のフレーバーテキストは、進行するにつれて変化します。
+- マシン概要タブ
 
-v0.5.1 in progress
+V0.5.1 進行中
 
-- (Mass to Energy Conversion)
-- Buy X buttons
-- Buy Max/Custom Buttons
-- Change Letter Formatting To Start At 100K
-- Rebalance Science
-- Change Icons (white circle with icon inside)
+- （質量からエネルギーへの変換）
+- Xボタンを購入する
+- マックス/カスタムボタンを購入する
+- 文字の書式を100Kから変更する
+- リバランスサイエンス
+- アイコンを変更する（内側にアイコンがある白い円）
 
-# Changelog:
+# 変更ログ:
 
-### v0.5.1 (includes all V0.5.0.X)
-##### Features
+### v0.5.1（すべてのV0.5.0を含む。X）
+##### 特徴
 
-- Storage Upgrade Discounts
-- T5 batteries
-- Fixed Huge Memory Leak
-- Multiple Spheres
-- Auto Emc
-- Redid Rebirth
-- Respec
-- Meteorite Tier 3 and 4
-- Live counter showing how much DM you will get from each section
-- Fixed Energy Efficiency 25/50 max bug
-- Heavily Expanded Interstellar Star List
+- ストレージアップグレード割引
+- T5バッテリー
+- 巨大なメモリリークを修正しました
+- 複数の球体
+- 車のEmc
+- リディ・リボーン
+- リスペック
+- 隕石ティア3と4
+- 各セクションからどれだけのDMを受け取るかを示すライブカウンター
+- エネルギー効率25/50最大バグを修正
+- 大きく拡張された星間星リスト
 
-##### Small Changes
+##### 小さな変化
 
-- Made Alpha Centauri distance clear
-- You cannot rebirth without a sphere
-- Fixed higher antimatter storages not saving
-- Reduced framerate from 100fps to 10fps
-- Build 250 Segments and Dyson Sphere Button
-- Balanced Ice T5 to have cost just below storage level rather than above it
-- AutoEmc keeps a 10K bank of plasma to avoid meteorite production depletion due to 0 plasma stored
-- Buffed Capital Ship\' power and defense
-- Reduced Oil T3 energy cost
-- Made Science and Resource Efficiency multiplicative with dark matter boost
-- Forces Swarms to use ShortName formatting for accuracy with DM scaling
-- Renamed some generic stars (thanks /u/Misacek01)
-- Inverted the loading screen colours
+- アルファケンタウリの距離を明確にした
+- 球体なしでは生まれ変わることはできません
+- 保存しないより高い反物質ストレージを修正しました
+- フレームレートを100fpsから10fpsに短縮
+- 250 セグメントとダイソン スフィア ボタンを構築する
+- バランスアイスT5のコストは、保管レベルより上ではなく、それより下にあります。
+- AutoEmcは、0個のプラズマが保存されているため隕石の生成が枯渇しないように、10Kのプラズマバンクを保持しています。
+- バフド・キャピタル・シップのパワーとディフェンス
+- 石油T3エネルギーコストの削減
+- ダークマターブーストで科学と資源効率を乗算する
+- Swarms に DM スケーリングの精度のために ShortName フォーマットの使用を強制する
+- いくつかの一般的な星の名前を変更しました（ありがとう/u/Misacek01）
+- ロード画面の色を反転しました
 
-##### Bug Fixed
+##### バグ修正
 
-- Fixed Comms wonder not showing interstellar tab
-- Fixed TARDIS production being incorrect
-- Fixed Storage Discount not working
-- Fixed Storage Upgrade overwriting old storages if greater than 6400
-- Fixed Tier 1 Rocket not showing red costs when inadequate
-- Fixed Subsequent Rebirths
-- Fixed Plasma not showing Gain 20
-- Fixed Wonders showing up as activated after rebirth
-- Fixed Solar System Showing planets before exploring requirements
-- Fixed AutoEmc using energy for meteorite
-- Fixed Fusion Reactor not using enough Hydrogen
-- Fixed Invasion Chance being NaN when reputation is above 60
-- Fixed Absorb not working
-- Fixed Antimatter not being affected by DM Boost
-- Fixed several UI issues after rebirth with the interstellar tab
-- Fixed Interstellar notifications of lost ships without actual losses
+- 修正された通信は、星間タブが表示されない
+- ターディスの生産が正しくない問題を修正しました
+- 固定ストレージ割引が機能しない
+- 6400を超えると古いストレージを上書きする固定ストレージアップグレード
+- 不十分な場合、ティア1ロケットが赤いコストを表示しない固定
+- その後の再生を固定
+- 固定プラズマがゲイン20を表示しない
+- 再生後にアクティブ化されたと表示される修正されたワンダー
+- 探査要件の前に惑星を示す固定太陽系
+- 隕石にエネルギーを使用するAutoEmcを修正しました
+- 十分な水素を使用しない固定核融合炉
+- 評判が60を超えると、侵入確率がNaNになる固定
+- 固定吸収が機能しない
+- DMブーストの影響を受けないアンチマターを修正しました
+- 星間タブで生まれ変わった後、いくつかのUIの問題を修正しました
+- 実際の損失のない失われた船の星間通知を修正しました
 
-### v0.5.0 The Interstellar Update
-##### Features
+### V0.5.0 星間更新
+##### 特徴
 
-- Offline Production
-- Screen Notifications Graphics Option
-- Kongregate Leaderboard
-- 7 New Themes
-- Random Loading Messages (100)
-- Communication Wonder
-- Rocket Wonder
-- Antimatter Wonder
-- Portal Room
-- Stargate
-- Plasma Storage Units
-- Buying Multiple Dyson Parts
-- Option to Hide Gain Buttons
-- Achievements for Rings and Swarms
-- Time Until Storage Full Display
-- Max Emc Conversion Button
-- Tier 3 Batteries
-- Tier 4 Labs
-- Tier 4 Batteries
-- Custom Company Name
-- Copy Export to Clipboard
-- Update Log On Page Load
-- Battery Efficiency Research
-- Coloured Destroy Button Option
-- Hydrazine Catalyst - T3 Rocket Fuel
-- Interstellar Radar Scanner
-- Achievement Ranks
-- Renamed Space Metal as Lunarite
-- The Wonder Tab hides itself when completed (makes space for more tabs)
-- Rebuilt Achievement Tooltips
-- Dark Matter
-- Hide Completed Tabs Button
-- Added Astronomical Breakthrough
-- Seperate Option for Autosave Notifications
+- オフライン生産
+- 画面通知グラフィックオプション
+- Kongregateリーダーボード
+- 7つの新しいテーマ
+- ランダム読み込みメッセージ (100)
+- コミュニケーションの不思議
+- ロケットワンダー
+- 反物質の不思議
+- ポータルルーム
+- スターゲート
+- プラズマ収納ユニット
+- 複数のダイソン部品を購入する
+- ゲインボタンを隠すオプション
+- リングと群れの成果
+- ストレージまでの時間 フルディスプレイ
+- 最大Emc変換ボタン
+- ティア3バッテリー
+- ティア4ラボ
+- ティア4バッテリー
+- カスタム会社名
+- コピーしてクリップボードにエクスポートする
+- ログオンページの読み込みを変更
+- バッテリー効率研究
+- 色付きの破壊ボタンオプション
+- ヒドラジン触媒 - T3ロケット燃料
+- 星間レーダースキャナー
+- アチーブメントランク
+- スペースメタルをルナライトに改名
+- ワンダータブは完了すると非表示になります（より多くのタブ用のスペースが空きます）
+- 再構築されたアチーブメントツールチップ
+- ダークマター
+- 完了したタブを隠すボタン
+- 追加された天文学的なブレークスルー
+- 自動保存通知の分離オプション
 
-##### Small Changes
+##### 小さな変化
 
 - Individual buttons to turn off Plasma and Meteorite Machines
 - Turn-off switch for all energy producers/consumers
@@ -160,7 +160,7 @@ v0.5.1 in progress
 - Standardised gainResource() function
 - Achievement Stars are worth their position
 
-##### Bug Fixes
+##### バグ修正
 
 - Fixed Bug With Solar System Sidebar
 - Fixed Unlocked Tabs Statistic Bug
@@ -198,7 +198,7 @@ v0.5.1 in progress
 - Fixed Logo not animating
 
 ### v0.4.4
-##### Features
+##### 特徴
 - Dyson Ring
 - Infinite Research
 - Overhauled Behind The Scenes Stuff - Made everything data driven
@@ -209,7 +209,8 @@ v0.5.1 in progress
 - Sidebar Nav Compression
 - Options For Number Format
 
-##### Small Changes
+##### 小さな変化
+
 - Reworked EMC UI
 - Energy Conversion Changes
 - Reworded Chemical Plant Description
@@ -226,7 +227,8 @@ v0.5.1 in progress
 - Reduced Info Overload on Getting Started Tab
 - Added LICENCE.txt
 
-##### Bug Fixes
+##### バグ修正
+
 - Fixed Oil Rig Costs
 - Fixed Helium T4 Red Costs
 - Fixed Dyson Section Reset Costs
@@ -242,11 +244,13 @@ v0.5.1 in progress
 - Fixed Typos
 
 ### v0.4.3
-- Completed Achievements
-- Changed Achievements System
-- 100,000x Conversion Option
 
-##### Bug Fixes
+- 達成された成果
+
+- 達成システムの変更
+- 100,000倍の変換オプション
+
+##### バグ修正
 - Fixed Destruction of Machines Research Red Cost Bug
 - Fixed Meteorite Wonder Cost Bug
 - Fixed Titanium T4 Energy Costs
