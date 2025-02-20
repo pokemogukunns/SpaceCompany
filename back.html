@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景画像選択</title>
+    <style>
+        .image-option {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .image-option img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .image-option p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>背景画像を選んでください</h1>
+    
+    <div class="image-option" onclick="changeBackground('https://example.com/image1.jpg')">
+        <img src="https://example.com/image1_thumb.jpg" alt="画像1">
+        <p>画像1</p>
+    </div>
+    
+    <div class="image-option" onclick="changeBackground('https://example.com/image2.jpg')">
+        <img src="https://example.com/image2_thumb.jpg" alt="画像2">
+        <p>画像2</p>
+    </div>
+    
+    <div class="image-option" onclick="changeBackground('https://example.com/image3.jpg')">
+        <img src="https://example.com/image3_thumb.jpg" alt="画像3">
+        <p>画像3</p>
+    </div>
+
+    <script>
+        function changeBackground(imageUrl) {
+            // 画像URLをlocalStorageに保存
+            localStorage.setItem('backgroundImage', imageUrl);
+            alert('背景が変更されました！');
+        }
+    </script>
+</body>
+</html>
