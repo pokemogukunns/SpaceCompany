@@ -9,15 +9,26 @@ if ("serviceWorker" in navigator) {
     .catch((err) => console.log("Service Worker registration failed:", err));
 }
 </script>
-   <style>
-        body {
-            background-image: url('https://pokemogukunns.github.io/SpaceCompany/img/IMG_0935.png');
-            background-size: cover; /* 背景画像を画面全体に拡大 */
-            background-position: center center; /* 画像の位置を中央に */
-            height: 100vh; /* 画面全体を占める */
-            margin: 0;
+<script>
+        // ページが読み込まれたときにlocalStorageから背景画像を読み込み
+        window.onload = function() {
+            const bgImage = localStorage.getItem('backgroundImage');
+            if (bgImage) {
+                document.body.style.backgroundImage = `url(${bgImage})`;
+                document.body.style.backgroundSize = "cover";
+                document.body.style.backgroundPosition = "center center";
+            } else {
+                document.body.style.backgroundColor = "#f0f0f0"; // デフォルトの背景色
+            }
         }
-    </style>
+</script>
+<style>
+        body {
+            height: 100vh;
+            margin: 0;
+            transition: background-image 0.5s ease-in-out; /* 背景変更時のフェード効果 */
+        }
+</style>
 <div id="loadScreen" style="width:100%; height:100%; background-color: black"><div style="width:100%; height:3%"></div><div style="width:70%; font-size:72px; font-family: 'Orbitron', 'sans-serif'; font-weight: lighter; color:#ffffff; line-height:72px; text-align:center; margin: auto;">Space Company<!-- </div><div style="margin-left:31%; "> --><br><img id="loadLogo" style="opacity: 1; width:50%; height:50%;" src="whiteLogo.png"><br></div><div id="splashText" style="width:100%; font-size:40px; font-family: 'Orbitron', 'sans-serif'; font-weight: bold; color:#ffffff; line-height:40px; text-align:center;">読み込み中...</div></div>
 <script type="text/javascript" src="data/splashTextData.js"></script>
 <div id="game" class="container hidden" style="width:95%; margin: auto;">
@@ -32,9 +43,19 @@ if ("serviceWorker" in navigator) {
 				<a class="navbar-brand pointer" target="_blank" href="http://discord.gg/hgRUjVp"><span class="text-muted small">私たちのDiscordに参加してください！</span></a>
 				<div class="pull-right" style="width:200px;">
 				<a class="navbar-brand"><span id="autoSaveTimer" class="text-muted small ng-binding" style="font-size:14px;"> </span></a></div></div>
-                                <div class="navbar-right"><login><!-- ngIf: env.isServerFrontendEnabled --></login></div></div><div class="ng-binding"></div></div><div height="30"></div><span id="updateBox"></span>
+                                <div class="navbar-right"><login><!-- ngIf: env.isサーバーフロントエンドが有効になっている --></login></div></div><div class="ng-binding"></div></div><div height="30"></div><span id="updateBox"></span>
 <!-- ナビゲーションタブ -->
-	                        <ul class="nav nav-tabs no-select" role="tablist" id="tabList"><li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> リソース</a></li><li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 研究</a></li><li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> ソーラーシステム</a></li><li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 奇跡</a></li><li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> ソルセンター</a></li><li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 機械</a></li><li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> ヘルプ/よくある質問</a></li><li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> もっと...</a></li></ul>
+	                        <ul class="nav nav-tabs no-select" role="tablist" id="tabList">
+					<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> リソース</a></li>
+					<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 研究</a></li>
+					<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> ソーラーシステム</a></li>
+					<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 奇跡</a></li>
+					<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> ソルセンター</a></li>
+					<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 機械</a></li>
+					<li role="presentation" class="active"><a href="/back" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('back')"><div id="back" class="glyphicon glyphicon-exclamation-sign hidden"></div> 背景選択</a></li>
+					<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> ヘルプ/よくある質問</a></li>
+					<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> もっと...</a></li>
+				</ul>
 <!-- タブ -->
 	<div class="tab-content" id="tabContent">
 			<!-- リソース -->
