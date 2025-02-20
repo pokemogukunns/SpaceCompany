@@ -47,5 +47,18 @@
             alert('背景が変更されました！');
         }
     </script>
+    <script>
+        // ページが読み込まれたときにlocalStorageから背景画像を読み込み
+        window.onload = function() {
+            const bgImage = localStorage.getItem('backgroundImage');
+            if (bgImage) {
+                document.body.style.backgroundImage = `url(${bgImage})`;
+                document.body.style.backgroundSize = "cover";
+                document.body.style.backgroundPosition = "center center";
+            } else {
+                document.body.style.backgroundColor = "#f0f0f0"; // デフォルトの背景色
+            }
+        }
+</script>
 </body>
 </html>
